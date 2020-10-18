@@ -1,1 +1,16 @@
 @import "common.css";
+.card {
+    background: white;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 20px 10px;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 30px;
+    width: 70%;
+}
+
+.card p {
+    padding: 0;
+    margin: 0;
+}

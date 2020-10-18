@@ -6,3 +6,12 @@
     font-size: 70px;
     margin-top: 0;
 }
+
+#tx {
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    font-size: 40px;
+    margin-top: 0;
+    padding: 0 20%;
+}
