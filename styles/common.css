@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap');
+.palettes {
+    color: #1A1A1D;
+    color: #4E4E50;
+    color: #6F2232;
+    color: #950740;
+    color: #C3073F;
+}
+
+body {
+    padding: 0;
+    background: #1A1A1D;
+    font-family: 'Cairo', sans-serif;
+}
+
+#logo {
+    margin-left: 15px;
+    margin-top: -35px;
+    margin-bottom: -20px;
+    font-size: 80px;
+    font-weight: 900;
+    color: #C3073F;
+}
+
+.topNav {
+    margin: 0px 10px;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.topNav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.topNav a:hover {
+    background-color: #4E4E50;
+    color: black;
+}
+
+.topNav a.active {
+    background-color: #6f2232;
+    color: white;
+}
