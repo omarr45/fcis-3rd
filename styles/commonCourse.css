@@ -1,1 +1,78 @@
 @import "common.css";
+#teams {
+    position: absolute;
+    top: 180px;
+    right: 50px;
+    margin: 20px;
+    background: #C3073F;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+}
+
+#teams #text {
+    margin-top: 7px;
+    margin-bottom: 0;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#teams #code {
+    margin: 0;
+    font-size: 18px;
+    background: rgba(0, 0, 0, 0.15);
+    color: white;
+    letter-spacing: 0.3rem;
+    margin-bottom: 10px;
+}
+
+#courseTitle {
+    color: white;
+    margin: 0px 30px;
+    margin-top: 0px;
+    font-size: 4rem;
+}
+
+#profName {
+    margin: 30px;
+    margin-top: 0px;
+    color: #4E4E50;
+    font-style: italic;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+#accordion {
+    width: 95%;
+    margin: 0 auto;
+}
+
+#accordion .contentBox {
+    position: relative;
+}
+
+#accordion .contentBox .label {
+    padding: 10px;
+    padding-left: 25px;
+    background: #6F2232;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+}
+
+#accordion .contentBox .label::after {
+    content: "+";
+    top: 50%;
+    right: 50px;
+    float: right;
+    padding-right: 15px;
+}
+
+#accordion .contentBox .cntnt {
+    font-size: 1.2rem;
+    background: white;
+    padding: 2px 20px;
+}
