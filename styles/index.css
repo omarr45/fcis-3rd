@@ -5,6 +5,7 @@
     font-weight: 700;
     font-size: 70px;
     margin-top: 0;
+    animation: fromDown 1.5s;
 }
 
 #tx {
@@ -14,4 +15,16 @@
     font-size: 40px;
     margin-top: 0;
     padding: 0 20%;
+    animation: fromDown 1.5s;
+}
+
+@keyframes fromDown {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

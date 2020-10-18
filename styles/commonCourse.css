@@ -43,6 +43,17 @@
     font-weight: 600;
 }
 
+@keyframes fromDown {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 #accordion {
     width: 95%;
     margin: 0 auto;
@@ -52,6 +63,7 @@
 #accordion .contentBox {
     position: relative;
     margin-top: 10px;
+    animation: fromDown 1.5s;
 }
 
 #accordion .contentBox .label {

@@ -3,6 +3,17 @@ body {
     align-items: center;
 }
 
+@keyframes fromDown {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .card {
     background: white;
     margin: 0 auto;
@@ -12,6 +23,7 @@ body {
     text-align: center;
     font-size: 30px;
     width: 60%;
+    animation: fromDown 1.5s;
 }
 
 .dates {
