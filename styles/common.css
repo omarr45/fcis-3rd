@@ -47,6 +47,10 @@ body {
     color: white;
 }
 
+.content {
+    min-height: calc(100vh - 60px);
+}
+
 footer {
     background: rgba(255, 255, 255, 0.1);
     color: white;
