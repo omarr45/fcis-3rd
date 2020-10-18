@@ -46,10 +46,12 @@
 #accordion {
     width: 95%;
     margin: 0 auto;
+    margin-bottom: 40px;
 }
 
 #accordion .contentBox {
     position: relative;
+    margin-top: 10px;
 }
 
 #accordion .contentBox .label {
@@ -71,8 +73,23 @@
     padding-right: 15px;
 }
 
+#accordion .contentBox.active .label::after {
+    content: "-";
+}
+
 #accordion .contentBox .cntnt {
+    position: relative;
     font-size: 1.2rem;
     background: white;
+    overflow: hidden;
+    height: 0;
+    transition: 0.3s;
+    overflow-y: auto;
+}
+
+#accordion .contentBox.active .cntnt {
     padding: 2px 20px;
+    height: 150px;
+    transition: 0.5s;
+    overflow-y: auto;
 }

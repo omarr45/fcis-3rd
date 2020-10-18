@@ -44,7 +44,25 @@
             <div class="contentBox">
                 <div class="label">Week 1</div>
                 <div class="cntnt">
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sequi beatae consequuntur, tempore, placeat repudiandae eius, mollitia quidem deleniti distinctio optio? Eligendi animi culpa, sint magnam ipsa eaque a maxime! </p>
+                    <p> Materials will be added here consequently </p>
+                </div>
+            </div>
+            <div class="contentBox">
+                <div class="label">Week 2</div>
+                <div class="cntnt">
+                    <p> Materials will be added here consequently </p>
+                </div>
+            </div>
+            <div class="contentBox">
+                <div class="label">Week 3</div>
+                <div class="cntnt">
+                    <p> Materials will be added here consequently </p>
+                </div>
+            </div>
+            <div class="contentBox">
+                <div class="label">Week 4</div>
+                <div class="cntnt">
+                    <p> Materials will be added here consequently </p>
                 </div>
             </div>
         </div>
@@ -55,6 +73,15 @@
     <footer>
         Developed and maintained by Omar AbdulRahman - 2020
     </footer>
+
+    <script>
+        const accor = document.getElementsByClassName('contentBox');
+        for (i = 0; i < accor.length; i++) {
+            accor[i].addEventListener('click', function() {
+                this.classList.toggle('active')
+            })
+        }
+    </script>
 
 </body>
 
