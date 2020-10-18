@@ -46,3 +46,14 @@ body {
     background-color: #6f2232;
     color: white;
 }
+
+footer {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+}
