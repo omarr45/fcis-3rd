@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/commonCourse.css">
+    <link rel="icon" href="assets/favicon.png" sizes="any" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Management Systems</title>
+</head>
+
+<body>
+    <div class="content">
+        <!--Logo-->
+        <h1 id="logo">
+            <a href="index.html" style="text-decoration: none; color: #C3073F;">
+            FCIS <bdi style="color: #950740;"> 2023 </bdi>
+            </a>
+        </h1>
+
+        <!-- Navigator -->
+        <div class="topNav">
+            <a href="index.html">Home</a>
+            <a href="schedule.html">Schedule</a>
+            <a class="active" href="courses.html">Courses</a>
+            <a href="announcements.html">Announcements</a>
+        </div>
+
+        <!--Microsoft Teams Code-->
+        <div id="teams">
+            <p id="text">Microsoft Teams Code</p>
+            <p id="code">N/A</p>
+        </div>
+
+        <!--Title-->
+        <h2 id="courseTitle">Data Management Systems</h2>
+
+        <!--By Who-->
+        <h2 id="profName">Prof. Dr. Nagwa Badr / Dr. Huda Amin</h2>
+
+        <!--Accordion-->
+        <div id="accordion">
+            <div class="contentBox">
+                <div class="label">Week 1</div>
+                <div class="cntnt">
+                    <p> Materials will be added here consequently </p>
+                </div>
+            </div>
+            <div class="contentBox">
+                <div class="label">Week 2</div>
+                <div class="cntnt">
+                    <p> Materials will be added here consequently </p>
+                </div>
+            </div>
+            <div class="contentBox">
+                <div class="label">Week 3</div>
+                <div class="cntnt">
+                    <p> Materials will be added here consequently </p>
+                </div>
+            </div>
+            <div class="contentBox">
+                <div class="label">Week 4</div>
+                <div class="cntnt">
+                    <p> Materials will be added here consequently </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--Footer-->
+    <footer>
+        Developed and maintained by Omar AbdulRahman - 2020
+    </footer>
+
+    <script>
+        const accor = document.getElementsByClassName('contentBox');
+        for (i = 0; i < accor.length; i++) {
+            accor[i].addEventListener('click', function() {
+                this.classList.toggle('active')
+            })
+        }
+    </script>
+
+</body>
+
+</html>
