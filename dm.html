@@ -41,6 +41,11 @@
 
         <!--Accordion-->
         <div id="accordion">
+            <div class="alert" id="alert" dir="rtl" style="visibility:visible">
+                <p>
+                    يتم الآن العمل على تسجيل أول محاضرة ورفعها لمن لم يحضر
+                </p>
+            </div>
             <div class="contentBox">
                 <div class="label" style="background-color: #C3073F;">Notes</div>
                 <div class="cntnt" dir="rtl">
@@ -88,6 +93,19 @@
                 this.classList.toggle('active')
             })
         }
+
+        var alr = document.getElementById('alert');
+
+        function hideMe() {
+            alr.style.visibility = "hidden";
+            alr.style.height = "0";
+        }
+
+        alr.addEventListener('click', function() {
+            hideMe();
+        });
+
+        //setTimeout("hideMe()", 10000);
     </script>
 
 </body>
