@@ -106,8 +106,12 @@
     overflow-y: auto;
 }
 
-#accordion .contentBox.active .cntnt a {
+#accordion .contentBox .cntnt a {
     padding-left: 10px;
+}
+
+#accordion .contentBox .cntnt i {
+    color: #d90444;
 }
 
 .alert {
