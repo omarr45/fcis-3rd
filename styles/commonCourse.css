@@ -106,6 +106,10 @@
     overflow-y: auto;
 }
 
+#accordion .contentBox.active .cntnt a {
+    padding-left: 10px;
+}
+
 .alert {
     animation: fromDown 1.5s;
     text-align: center;
