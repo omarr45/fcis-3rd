@@ -18,6 +18,16 @@
     animation: fromDown 1.5s;
 }
 
+#issues {
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 0;
+    padding: 0 20%;
+    animation: fromDown 1.5s;
+}
+
 @keyframes fromDown {
     from {
         opacity: 0;
