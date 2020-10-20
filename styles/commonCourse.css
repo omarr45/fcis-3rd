@@ -101,13 +101,19 @@
 
 #accordion .contentBox.active .cntnt {
     padding: 2px 25px;
-    height: 150px;
+    height: 300px;
     transition: 0.5s;
     overflow-y: auto;
 }
 
 #accordion .contentBox .cntnt a {
     padding-left: 10px;
+}
+
+#accordion .contentBox .cntnt h4 {
+    padding-left: 10px;
+    margin-bottom: -10px;
+    margin-top: 0px;
 }
 
 #accordion .contentBox .cntnt i {
