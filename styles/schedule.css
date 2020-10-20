@@ -30,3 +30,18 @@ body {
     margin-top: 10px;
     font-size: 20px;
 }
+
+@media screen and (max-width:480px) {
+    .card {
+        border-radius: 15px;
+        width: 80%;
+        font-size: 18px;
+    }
+    .dates {
+        font-size: 12px;
+    }
+    .card .title {
+        font-size: 40px;
+        line-height: 3.5rem;
+    }
+}

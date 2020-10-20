@@ -38,3 +38,19 @@
         transform: translateY(0);
     }
 }
+
+@media screen and (max-width:480px) {
+    #welcome {
+        margin-top: 40px;
+        font-size: 36px;
+        line-height: 3rem;
+    }
+    #tx {
+        padding: 0 10%;
+        font-size: 25px;
+    }
+    #issues {
+        margin-top: 40px;
+        font-size: 14px;
+    }
+}

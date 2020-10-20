@@ -70,17 +70,12 @@ a {
     color: black;
 }
 
-@media screen and (max-width:720px) {
-    .card .title {
-        font-size: 60px;
+@media screen and (max-width:480px) {
+    .card {
+        border-radius: 15px;
     }
-}
-
-@media screen and (max-width:580px) {
     .card .title {
-        font-size: 48px;
-    }
-    .topNav a {
-        font-size: 14px;
+        font-size: 40px;
+        line-height: 3.5rem;
     }
 }
