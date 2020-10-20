@@ -64,11 +64,13 @@ footer {
 
 @media screen and (max-width: 480px) {
     #logo {
+        font-size: 65px;
         line-height: 5rem;
         margin: 10px 10px;
     }
     .topNav a {
         padding: 10px 12px;
+        font-size: 15px;
     }
     footer {
         font-size: 10px;

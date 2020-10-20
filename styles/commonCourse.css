@@ -145,9 +145,6 @@
 }
 
 @media screen and (max-width: 480px) {
-    .topNav a {
-        padding: 10px 12px;
-    }
     #teams {
         position: static;
         height: 90px;
@@ -167,7 +164,8 @@
     }
     #profName {
         margin: 30px;
-        margin-top: 0px;
+        margin-top: 10px;
+        line-height: 1.4rem;
         color: #4E4E50;
         font-style: italic;
         font-size: 1.2rem;
