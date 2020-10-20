@@ -67,6 +67,7 @@ footer {
         font-size: 65px;
         line-height: 5rem;
         margin: 10px 10px;
+        text-align: center;
     }
     .topNav a {
         padding: 10px 12px;
@@ -74,5 +75,12 @@ footer {
     }
     footer {
         font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .topNav a {
+        padding: 8px 10px;
+        font-size: 12px;
     }
 }
