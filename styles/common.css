@@ -61,3 +61,16 @@ footer {
     margin-top: 10px;
     padding: 10px;
 }
+
+@media screen and (max-width: 480px) {
+    #logo {
+        line-height: 5rem;
+        margin: 10px 10px;
+    }
+    .topNav a {
+        padding: 10px 12px;
+    }
+    footer {
+        font-size: 10px;
+    }
+}

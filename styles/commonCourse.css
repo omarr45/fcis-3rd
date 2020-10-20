@@ -101,7 +101,7 @@
 
 #accordion .contentBox.active .cntnt {
     padding: 2px 25px;
-    height: 300px;
+    height: 200px;
     transition: 0.5s;
     overflow-y: auto;
 }
@@ -142,4 +142,44 @@
     font-size: 2.7rem;
     color: #C3073F;
     cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+    .topNav a {
+        padding: 10px 12px;
+    }
+    #teams {
+        position: static;
+        height: 90px;
+    }
+    #teams #text {
+        font-size: 22px;
+    }
+    #teams #code {
+        font-size: 18px;
+    }
+    #courseTitle {
+        color: white;
+        margin: 0px 30px;
+        margin-top: 0px;
+        font-size: 2.2rem;
+        line-height: 2.6rem;
+    }
+    #profName {
+        margin: 30px;
+        margin-top: 0px;
+        color: #4E4E50;
+        font-style: italic;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    #accordion .contentBox .label {
+        font-size: 1.2rem;
+    }
+    #accordion .contentBox .cntnt {
+        font-size: 1rem;
+    }
+    .alert {
+        font-size: 1rem;
+    }
 }
