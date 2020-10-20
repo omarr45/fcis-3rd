@@ -100,7 +100,7 @@
 }
 
 #accordion .contentBox.active .cntnt {
-    padding: 2px 20px;
+    padding: 2px 25px;
     height: 150px;
     transition: 0.5s;
     overflow-y: auto;
