@@ -3,7 +3,7 @@
     background: white;
     margin: 0 auto;
     margin-top: 20px;
-    padding: 20px 10px;
+    padding: 20px 50px;
     border-radius: 25px;
     text-align: center;
     font-size: 30px;
@@ -11,8 +11,12 @@
 }
 
 .card p {
-    padding: 0;
+    padding: 0px 10px;
     margin: 0;
+}
+
+#error {
+    color: red;
 }
 
 @media screen and (max-width:480px) {
