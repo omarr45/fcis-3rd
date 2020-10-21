@@ -36,4 +36,7 @@
         width: 90%;
         margin-bottom: 20px;
     }
+    #error {
+        font-size: 16px;
+    }
 }
