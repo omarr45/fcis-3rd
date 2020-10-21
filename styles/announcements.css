@@ -26,10 +26,10 @@
 @media screen and (max-width:480px) {
     .card {
         border-radius: 15px;
-        width: 80%;
+        width: 60%;
+        font-size: 20px;
     }
     .card p {
-        font-size: 20px;
         line-height: 2rem;
     }
     .card p img {
