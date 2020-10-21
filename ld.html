@@ -56,6 +56,13 @@
 
         <!--Accordion-->
         <div id="accordion">
+            <div class="alert" id="alert" dir="rtl" style="visibility:visible">
+                <p>
+                    <ul>
+                        &bull; المحاضرة بنسختينها (لايف و متسجلة) هتنزل على آخر الاسبوع بإذن الله <br> &bull; مش محتاج تكتب اسمك في الشات، Microsoft Teams بياخد الحضور لوحده <br> &bull; ياريت أثناء اللايف نخلي الشات للكلام المهم المتعلق بالمحاضرة بس <br>
+                    </ul>
+                </p>
+            </div>
             <div class="contentBox">
                 <div class="label">Week 1</div>
                 <div class="cntnt">
@@ -103,6 +110,17 @@
                 this.classList.toggle('active')
             })
         }
+
+        var alr = document.getElementById('alert');
+
+        function hideMe() {
+            alr.style.visibility = "hidden";
+            alr.style.height = "0";
+        }
+
+        alr.addEventListener('click', function() {
+            hideMe();
+        });
     </script>
 
 </body>
