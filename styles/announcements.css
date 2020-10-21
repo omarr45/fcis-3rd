@@ -15,6 +15,10 @@
     margin: 0;
 }
 
+.card p img {
+    width: 40%;
+}
+
 #error {
     color: red;
 }
