@@ -32,4 +32,8 @@
         font-size: 20px;
         line-height: 2rem;
     }
+    .card p img {
+        width: 90%;
+        margin-bottom: 20px;
+    }
 }
