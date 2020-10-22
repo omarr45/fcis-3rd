@@ -133,17 +133,6 @@
     border-right: 20px solid #C3073F;
 }
 
-.alert::after {
-    content: "x";
-    position: absolute;
-    top: 0;
-    right: 2%;
-    font-weight: 700;
-    font-size: 2.7rem;
-    color: #C3073F;
-    cursor: pointer;
-}
-
 @media screen and (max-width: 480px) {
     #teams {
         position: static;
