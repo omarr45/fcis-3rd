@@ -6,6 +6,7 @@
     font-size: 70px;
     margin-top: 0;
     animation: fromDown 1.5s;
+    margin-bottom: 0px;
 }
 
 #tx {
@@ -26,6 +27,26 @@
     margin-top: 0;
     padding: 0 20%;
     animation: fromDown 1.5s;
+}
+
+.alert {
+    margin-right: 30%;
+    margin-left: 30%;
+    animation: fromDown 1.5s;
+    text-align: center;
+    padding: 10px 30px;
+    color: white;
+    font-size: 1.4rem;
+    background: #C3073F;
+    overflow: hidden;
+    transition: 0.3s;
+    overflow-y: auto;
+    border-radius: 15px;
+    border: 7px solid white;
+}
+
+.alert a {
+    color: white;
 }
 
 @keyframes fromDown {
