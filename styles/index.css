@@ -74,4 +74,8 @@
         margin-top: 40px;
         font-size: 14px;
     }
+    .alert {
+        margin: 5% 10%;
+        padding: 4px;
+    }
 }
