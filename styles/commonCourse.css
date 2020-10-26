@@ -121,6 +121,7 @@
 }
 
 .alert {
+    margin-top: 10px;
     animation: fromDown 1.5s;
     text-align: center;
     position: relative;
