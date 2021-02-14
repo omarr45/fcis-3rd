@@ -30,8 +30,7 @@
 }
 
 .alert {
-    margin-right: 30%;
-    margin-left: 30%;
+    margin: 15px 30%;
     animation: fromDown 1.5s;
     text-align: center;
     padding: 6px 20px;
