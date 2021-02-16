@@ -123,6 +123,7 @@
 .alert {
     margin-top: 10px;
     animation: fromDown 1.5s;
+    line-height: 40px;
     text-align: center;
     position: relative;
     padding: 0px 30px;
@@ -169,5 +170,6 @@
     }
     .alert {
         font-size: 1rem;
+        line-height: 25px;
     }
 }
