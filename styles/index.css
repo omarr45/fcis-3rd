@@ -48,6 +48,13 @@
     color: white;
 }
 
+#os {
+    display: block;
+    margin: 30px auto;
+    width: 15%;
+    animation: fromDown 1.5s;
+}
+
 @keyframes fromDown {
     from {
         opacity: 0;
@@ -76,5 +83,8 @@
     .alert {
         margin: 5% 10%;
         padding: 4px;
+    }
+    #os {
+        width: 40%;
     }
 }
