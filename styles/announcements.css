@@ -19,6 +19,12 @@
     width: 40%;
 }
 
+.ttl {
+    width: 50%;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
 #error {
     color: red;
 }
