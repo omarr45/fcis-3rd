@@ -30,12 +30,12 @@
 }
 
 .alert {
-    margin: 15px 30%;
+    margin: 15px 20%;
     animation: fromDown 1.5s;
     text-align: center;
     padding: 6px 20px;
     color: white;
-    font-size: 1.4rem;
+    font-size: 2rem;
     background: #C3073F;
     overflow: hidden;
     transition: 0.3s;
@@ -83,6 +83,7 @@
     .alert {
         margin: 5% 10%;
         padding: 4px;
+        font-size: 1.4rem;
     }
     #os {
         width: 40%;
