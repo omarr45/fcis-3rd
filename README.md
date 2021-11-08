@@ -3,7 +3,7 @@
 # Welcome to FCIS-2023!
 An archive to all the data and materials for FCIS-2023 year two
 
-You can visit the site at [fcis2023.me](https://fcis2023.me)
+You can visit the site at [fcis2023.me](https://omarr45.github.io/FCIS-2023/)
 
 ## Screenshots
 [![Screenshot01](https://user-images.githubusercontent.com/58887202/108444555-898d4e00-7263-11eb-9de2-a371f2af0ba3.png)](https://fcis2023.me)
