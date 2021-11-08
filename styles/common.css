@@ -1,89 +1,93 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap');
 .palettes {
-    color: #1A1A1D;
-    color: #4E4E50;
-    color: #6F2232;
-    color: #950740;
-    color: #C3073F;
+  color: #1a1a1d;
+  color: #4e4e50;
+  color: #6f2232;
+  color: #950740;
+  color: #c3073f;
 }
 
 body {
-    padding: 0;
-    background: #1A1A1D;
-    font-family: 'Cairo', sans-serif;
+  padding: 0;
+  background: #1a1a1d;
+  font-family: 'Cairo', sans-serif;
 }
 
 #logo {
-    margin-left: 15px;
-    margin-top: -35px;
-    margin-bottom: -20px;
-    font-size: 80px;
-    font-weight: 900;
-    color: #C3073F;
+  margin-left: 15px;
+  margin-top: -35px;
+  margin-bottom: -20px;
+  font-size: 80px;
+  font-weight: 900;
+  color: #c3073f;
 }
 
 .topNav {
-    margin: 0px 10px;
-    overflow: hidden;
-    background-color: #333;
+  margin: 0px 10px;
+  overflow: hidden;
+  background-color: #333;
 }
 
 .topNav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
-    font-size: 18px;
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 18px;
 }
 
 .topNav a:hover {
-    background-color: #4E4E50;
-    color: black;
+  background-color: #4e4e50;
+  color: black;
 }
 
 .topNav a.active {
-    background-color: #6f2232;
-    color: white;
+  background-color: #6f2232;
+  color: white;
 }
 
 .content {
-    min-height: calc(100vh - 60px);
+  min-height: calc(100vh - 60px);
 }
 
 footer {
-    background: rgba(255, 255, 255, 0.1);
-    color: white;
-    font-size: 18px;
-    letter-spacing: 1px;
-    text-align: center;
-    margin: auto;
-    margin-top: 10px;
-    padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: auto;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+footer a {
+  color: inherit;
 }
 
 @media screen and (max-width: 480px) {
-    #logo {
-        font-size: 60px;
-        line-height: 5rem;
-        margin: 10px 10px;
-        text-align: center;
-    }
-    .topNav a {
-        padding: 10px 12px;
-        font-size: 15px;
-    }
-    footer {
-        font-size: 10px;
-    }
+  #logo {
+    font-size: 60px;
+    line-height: 5rem;
+    margin: 10px 10px;
+    text-align: center;
+  }
+  .topNav a {
+    padding: 10px 12px;
+    font-size: 15px;
+  }
+  footer {
+    font-size: 10px;
+  }
 }
 
 @media screen and (max-width: 400px) {
-    #logo {
-        font-size: 55px;
-    }
-    .topNav a {
-        padding: 8px 10px;
-        font-size: 12px;
-    }
+  #logo {
+    font-size: 55px;
+  }
+  .topNav a {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
 }

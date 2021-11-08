@@ -1,403 +1,664 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180962234-1"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-180962234-1"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
+      window.dataLayer = window.dataLayer || [];
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
 
-        gtag('config', 'UA-180962234-1');
+      gtag('config', 'UA-180962234-1');
     </script>
 
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles/common.css">
-    <link rel="stylesheet" href="styles/commonCourse.css">
-    <link rel="icon" href="assets/favicon.png" sizes="any" type="image/png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/e67747c5dd.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles/common.css" />
+    <link rel="stylesheet" href="styles/commonCourse.css" />
+    <link rel="icon" href="assets/favicon.png" sizes="any" type="image/png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/e67747c5dd.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Object Oriented Programming</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="content">
-        <!--Logo-->
-        <h1 id="logo">
-            <a href="index.html" style="text-decoration: none; color: #C3073F;">
-            FCIS <bdi style="color: #950740;"> 2023 </bdi>
-            </a>
-        </h1>
+      <!--Logo-->
+      <h1 id="logo">
+        <a href="index.html" style="text-decoration: none; color: #c3073f">
+          FCIS <bdi style="color: #950740"> 2023 </bdi>
+        </a>
+      </h1>
 
-        <!-- Navigator -->
-        <div class="topNav">
-            <a href="index.html">Home</a>
-            <a href="schedule.html">Schedule</a>
-            <a class="active" href="courses.html">Courses</a>
-            <a href="announcements.html">Announcements</a>
+      <!-- Navigator -->
+      <div class="topNav">
+        <a href="index.html">Home</a>
+        <a href="schedule.html">Schedule</a>
+        <a class="active" href="courses.html">Courses</a>
+        <a href="announcements.html">Announcements</a>
+      </div>
+
+      <!--Microsoft Teams Code-->
+      <div id="teams">
+        <p id="text">Microsoft Teams Code</p>
+        <p id="code">N/A</p>
+      </div>
+
+      <!--Title-->
+      <h2 id="courseTitle">Object Oriented Programming</h2>
+
+      <!--By Who-->
+      <h2 id="profName">
+        Prof. Dr. Zaki Taha /
+        <bdi style="text-decoration: underline">Dr. Mohamed Mabrouk</bdi>
+      </h2>
+
+      <!--Accordion-->
+
+      <div id="accordion">
+        <div class="alert" id="alert" style="visibility: visible">
+          <p>Final Exam 2021 <a href="material/Exams/2021/OOP.pdf">here</a></p>
         </div>
-
-        <!--Microsoft Teams Code-->
-        <div id="teams">
-            <p id="text">Microsoft Teams Code</p>
-            <p id="code">N/A</p>
+        <div class="contentBox">
+          <div class="label" style="background-color: #c3073f">Resources</div>
+          <div class="cntnt">
+            <p>
+              <i class="fas fa-file-alt"></i>
+              <a href="material/St/OOP_Questions.pdf" target="_blank"
+                >Tracing Questions</a
+              >
+              &nbsp;&nbsp;/
+              <a href="material/St/OOP_Solutions.pdf" target="_blank"
+                >Solutions</a
+              >
+            </p>
+            <p>
+              <i class="fas fa-file"></i>
+              <a href="material/Exams/OOP_Midterm1.pdf" target="_blank">
+                Midterm Model A</a
+              >
+            </p>
+            <p>
+              <i class="fas fa-file"></i>
+              <a href="material/Exams/OOP_Midterm2.pdf" target="_blank">
+                Midterm Model B</a
+              >
+            </p>
+            <p>
+              <i class="fas fa-file"></i>
+              <a href="material/Exams/OOP_Midterm3.pdf" target="_blank">
+                Midterm Model C</a
+              >
+            </p>
+            <p>
+              <i class="fas fa-info-circle"></i>
+              <a
+                href="https://elearning.cis.asu.edu.eg/undergraduate/mod/forum/view.php?id=3928"
+                target="_blank"
+              >
+                OOP Announcements on LMS &nbsp; (Check it often)</a
+              >
+            </p>
+            <p>
+              <i class="fas fa-download"></i>
+              <a
+                href="https://www.oracle.com/technetwork/java/javase/downloads/jdk-netbeans-jsp-3413139-esa.html"
+                target="_blank"
+              >
+                Download Netbeans + JDK</a
+              >
+            </p>
+            <p>
+              <i class="fas fa-book"></i>
+              <a href="material/Books/Java.pdf" target="_blank">
+                Course Book - Java: How to program, early objects</a
+              >
+            </p>
+            <p>
+              <i class="fab fa-youtube"></i>
+              <a
+                href="https://youtube.com/playlist?list=PLITnyKsguk5mkgN9K5O38mFEsHAi27kd2"
+                target="_blank"
+              >
+                OOP playlist [Lectures] - Eyad Alsherif
+              </a>
+            </p>
+            <p>
+              <i class="fab fa-youtube"></i>
+              <a
+                href="https://youtube.com/playlist?list=PLITnyKsguk5k-BbON5Srwiwx3EmKeSH3a"
+                target="_blank"
+              >
+                OOP playlist [Labs] - Eyad Alsherif
+              </a>
+            </p>
+            <p>
+              <i class="fab fa-youtube"></i>
+              <a
+                href="https://www.youtube.com/playlist?list=PLoK2Lr1miEm9dKecG6s5OmMiueYV0GF9E&fbclid=IwAR0ONe-F2YYzOYOa9op037sYKlDRDrOwAQO_4f-m2b_vDbMnaekbnTJuojY"
+                target="_blank"
+              >
+                OOP playlist - FCIH OCW
+              </a>
+            </p>
+            <p>
+              <i class="fas fa-chalkboard-teacher"></i>
+              <a
+                href="https://www.udemy.com/course/java-programming-basics/"
+                target="_blank"
+              >
+                Java + OOP Course - Udemy (3 hours)
+              </a>
+            </p>
+            <p>
+              <i class="fab fa-youtube"></i>
+              <a
+                href="https://www.youtube.com/playlist?list=PLCInYL3l2AajYlZGzU_LVrHdoouf8W6ZN&fbclid=IwAR05-hDpbP1TiyEXa39sBTxAhs33C47ISAdIy_yW7LNgdgikyWpRLEgXC0A"
+                target="_blank"
+              >
+                Java Course (Adel Nasim)
+              </a>
+            </p>
+            <p>
+              <i class="fas fa-code"></i>
+              <a href="material/St/JnC.pdf" target="_blank">
+                Java vs C++ (Mark Nasif)</a
+              >
+            </p>
+          </div>
         </div>
-
-        <!--Title-->
-        <h2 id="courseTitle">Object Oriented Programming</h2>
-
-        <!--By Who-->
-        <h2 id="profName">Prof. Dr. Zaki Taha / <bdi style="text-decoration: underline;">Dr. Mohamed Mabrouk</bdi></h2>
-
-        <!--Accordion-->
-
-        <div id="accordion">
-            <div class="alert" id="alert" style="visibility:visible">
-                <p>
-                    Final Exam 2021 <a href="material/Exams/2021/OOP.pdf">here</a>
-                </p>
-            </div>
-            <div class="contentBox">
-                <div class="label" style="background-color: #C3073F;">Resources</div>
-                <div class="cntnt">
-                    <p>
-                        <i class="fas fa-file-alt"></i>
-                        <a href="material/St/OOP_Questions.pdf" target="_blank">Tracing Questions</a> &nbsp;&nbsp;/ <a href="material/St/OOP_Solutions.pdf" target="_blank">Solutions</a>
-                    </p>
-                    <p>
-                        <i class="fas fa-file"></i>
-                        <a href="material/Exams/OOP_Midterm1.pdf" target="_blank"> Midterm Model A</a>
-                    </p>
-                    <p>
-                        <i class="fas fa-file"></i>
-                        <a href="material/Exams/OOP_Midterm2.pdf" target="_blank"> Midterm Model B</a>
-                    </p>
-                    <p>
-                        <i class="fas fa-file"></i>
-                        <a href="material/Exams/OOP_Midterm3.pdf" target="_blank"> Midterm Model C</a>
-                    </p>
-                    <p>
-                        <i class="fas fa-info-circle"></i>
-                        <a href="https://elearning.cis.asu.edu.eg/undergraduate/mod/forum/view.php?id=3928" target="_blank"> OOP Announcements on LMS &nbsp; (Check it often)</a>
-                    </p>
-                    <p>
-                        <i class="fas fa-download"></i>
-                        <a href="https://www.oracle.com/technetwork/java/javase/downloads/jdk-netbeans-jsp-3413139-esa.html" target="_blank"> Download Netbeans + JDK</a>
-                    </p>
-                    <p>
-                        <i class="fas fa-book"></i>
-                        <a href="material/Books/Java.pdf" target="_blank"> Course Book - Java: How to program, early objects</a>
-                    </p>
-                    <p>
-                        <i class="fab fa-youtube"></i>
-                        <a href="https://www.youtube.com/playlist?list=PLoK2Lr1miEm9dKecG6s5OmMiueYV0GF9E&fbclid=IwAR0ONe-F2YYzOYOa9op037sYKlDRDrOwAQO_4f-m2b_vDbMnaekbnTJuojY" target="_blank"> OOP playlist - FCIH OCW </a>
-                    </p>
-                    <p>
-                        <i class="fas fa-chalkboard-teacher"></i>
-                        <a href="https://www.udemy.com/course/java-programming-basics/" target="_blank"> Java + OOP Course - Udemy (3 hours) </a>
-                    </p>
-                    <p>
-                        <i class="fab fa-youtube"></i>
-                        <a href="https://www.youtube.com/playlist?list=PLCInYL3l2AajYlZGzU_LVrHdoouf8W6ZN&fbclid=IwAR05-hDpbP1TiyEXa39sBTxAhs33C47ISAdIy_yW7LNgdgikyWpRLEgXC0A" target="_blank"> Java Course (Adel Nasim) </a>
-                    </p>
-                    <p>
-                        <i class="fas fa-code"></i>
-                        <a href="material/St/JnC.pdf" target="_blank"> Java vs C++ (Mark Nasif)</a>
-                    </p>
-                </div>
-            </div>
-            <div class="contentBox">
-                <div class="label">Week 1</div>
-                <div class="cntnt">
-                    <p>
-                        <i class="fas fa-video"></i>
-                        <a href="https://web.microsoftstream.com/video/c65c99f5-2aa3-4435-8872-f4082c9f437f?fbclid=IwAR3f3N72dXpO3vr44GhZ1_Vgy-gZaI28iLs_PF56e4GCQksT920kgctQuIY&referrer=https:%2F%2Fl.facebook.com%2F" target="_blank"> Lecture 1 - (Introduction to OOP) "Live" - Dr. Mohamed Mabrouk</a>
-                    </p>
-                    <p>
-                        <i class="fas fa-file"></i>
-                        <a href="material/Dr/OOP_L1.pdf" target="_blank"> Lecture 1 - (Introduction to OOP) - Dr. Mohamed Mabrouk</a>
-                    </p>
-                </div>
-            </div>
-            <div class="contentBox">
-                <div class="label">Week 2</div>
-                <div class="cntnt">
-                    <p>
-                        <i class="fas fa-video"></i>
-                        <a href="https://web.microsoftstream.com/video/82dd6264-f00d-4601-aea7-afc7bbefe797" target="_blank"> Lecture 2 - (Java Syntax) "Live" - Dr. Mohamed Mabrouk</a>
-                    </p>
-                    <p>
-                        <i class="fas fa-file"></i>
-                        <a href="material/Dr/OOP_L2.pdf" target="_blank"> Lecture 2 - (Java Syntax) - Dr. Mohamed Mabrouk</a>
-                    </p>
-                    <hr>
-                    <p>
-                        <i class="fas fa-video"></i>
-                        <a href="https://web.microsoftstream.com/video/2057ab66-d5e7-4b98-a1e9-b1dc203b505d" target="_blank"> Lab 1</a>
-                    </p>
-                    <p>
-                        <i class="fas fa-file"></i>
-                        <a href="material/Dr/OOP_Lab01.pdf" target="_blank">  Lab 1 Slides </a>
-                    </p>
-                    <p>
-                        <i class="fas fa-download"></i>
-                        <a href="material/Dr/OOP_Lab01_Sol.zip" target="_blank">  Lab 1 - Solutions (Zip) </a>
-                    </p>
-                </div>
-            </div>
-            <div class="contentBox">
-                <div class="label">Week 3</div>
-                <div class="cntnt">
-                    <p>
-                        <i class="fas fa-video"></i>
-                        <a href="https://web.microsoftstream.com/video/89640b0f-2f2e-49cd-82a0-301bd6d0d5fb" target="_blank"> Lecture 3 - (Unified Modeling Language) "Live" - Dr. Mohamed Mabrouk</a>
-                    </p>
-                    <p>
-                        <i class="fas fa-file"></i>
-                        <a href="material/Dr/OOP_L2b.pdf" target="_blank"> Lecture 3 - (Unified Modeling Language) - Dr. Mohamed Mabrouk  (Starting from slide 32)</a>
-                    </p>
-                    <hr>
-                    <p>
-                        <i class="fas fa-video"></i>
-                        <a href="https://web.microsoftstream.com/video/8792803e-4fe8-46dc-af01-9da8b75e25cb" target="_blank"> Lab 2 </a>
-                    </p>
-                    <p>
-                        <i class="fas fa-video"></i>
-                        <a href="https://web.microsoftstream.com/video/a735c455-d752-497c-93e0-64be4c8b70de" target="_blank"> Lab 2 - Hands On Solutions </a>
-                    </p>
-                    <p>
-                        <i class="fas fa-file"></i>
-                        <a href="material/Dr/OOP_Lab02.pdf" target="_blank">  Lab 2 Slides (Without Hands On) </a>
-                    </p>
-                    <p>
-                        <i class="fas fa-file"></i>
-                        <a href="material/Dr/OOP_Lab02b.pdf" target="_blank">  Lab 2 Slides (With Hands On) </a>
-                    </p>
-                </div>
-            </div>
-            <div class="contentBox">
-                <div class="label">Week 4</div>
-                <div class="cntnt">
-                    <p>
-                        <i class="fas fa-video"></i>
-                        <a href="https://web.microsoftstream.com/video/3f3fd6ef-923b-4697-82b5-845a64ea3cfb" target="_blank"> Lecture 4 - (Methods and Strings) "Live" - Dr. Mohamed Mabrouk</a>
-                    </p>
-                    <p>
-                        <i class="fas fa-file"></i>
-                        <a href="material/Dr/OOP_L3.pdf" target="_blank"> Lecture 4 - (Methods and Strings) - Dr. Mohamed Mabrouk</a>
-                    </p>
-                    <hr>
-                    <p>
-                        <i class="fas fa-video"></i>
-                        <a href="https://web.microsoftstream.com/video/d537045e-4ff4-4b70-ace6-fff144cd6263" target="_blank"> Lab 3 </a>
-                    </p>
-                    <p>
-                        <i class="fas fa-video"></i>
-                        <a href="https://web.microsoftstream.com/video/8c09116a-ef32-4c5e-8592-bb12933bad35" target="_blank"> Lab 3 - Hands On Solutions </a>
-                    </p>
-                    <p>
-                        <i class="fas fa-file"></i>
-                        <a href="material/Dr/OOP_Lab03.pdf" target="_blank">  Lab 3 Slides (Without Hands On) </a>
-                    </p>
-                    <p>
-                        <i class="fas fa-file"></i>
-                        <a href="material/Dr/OOP_Lab03b.pdf" target="_blank">  Lab 3 Slides (With Hands On) </a>
-                    </p>
-                </div>
-            </div>
-            <div class="contentBox">
-                <div class="label">Week 5</div>
-                <div class="cntnt">
-                    <p>
-                        <i class="fas fa-video"></i>
-                        <a href="https://web.microsoftstream.com/video/a6a00273-e506-4531-89b2-4eeabe2e2ba7" target="_blank"> Lecture 5 Part 1 - (Methods and Strings Continued) "Live" - Dr. Mohamed Mabrouk</a>
-                    </p>
-                    <p>
-                        <i class="fas fa-video"></i>
-                        <a href="https://web.microsoftstream.com/video/3d8c6f03-ecce-4468-8c45-4b57378c8c95" target="_blank"> Lecture 5 Part 2- (Inheritance & Polymorphism) "Live" - Dr. Mohamed Mabrouk</a>
-                    </p>
-                    <p>
-                        <i class="fas fa-file"></i>
-                        <a href="material/Dr/OOP_L4.pdf" target="_blank"> Lecture 5 - (Inheritance & Polymorphism) - Dr. Mohamed Mabrouk</a>
-                    </p>
-                    <hr>
-                    <p>
-                        <i class="fas fa-video"></i>
-                        <a href="https://web.microsoftstream.com/video/12ab5a92-0a70-4524-89c1-f77c6b8b5503" target="_blank"> Lab 4 </a>
-                    </p>
-                    <p>
-                        <i class="fas fa-file-powerpoint"></i>
-                        <a href="material/Dr/OOP_Lab04.pptx" target="_blank">  Lab 4 Slides</a>
-                    </p>
-                    <p>
-                        <i class="fas fa-video"></i>
-                        <a href="https://web.microsoftstream.com/video/1a411fe8-7455-4316-9267-9181d92ba435" target="_blank"> Lab 4 - Hands On Solutions </a>
-                    </p>
-                    <p>
-                        <i class="fas fa-file-powerpoint"></i>
-                        <a href="material/Dr/OOP_Lab04b.pptx" target="_blank">  Lab 4 Slides (With Hands On) </a>
-                    </p>
-                </div>
-            </div>
-            <div class="contentBox">
-                <div class="label">Week 6</div>
-                <div class="cntnt">
-                    <p>
-                        <i class="fas fa-video"></i>
-                        <a href="https://web.microsoftstream.com/video/58cfb0f2-8ae6-48b8-9088-02b40c70a8f9" target="_blank"> Lecture 6 - (Inheritance & Polymorphism) "Live" - Dr. Mohamed Mabrouk</a>
-                    </p>
-                    <p>
-                        <i class="fas fa-file"></i>
-                        <a href="material/Dr/OOP_L4.pdf" target="_blank"> Lecture 6 - (Inheritance and Polymorphism) - Dr. Mohamed Mabrouk</a>
-                    </p>
-                    <hr>
-                    <p>
-                        <i class="fas fa-video"></i>
-                        <a href="https://web.microsoftstream.com/video/954ba346-3ccf-427d-93f6-c2fc285e659b" target="_blank"> Lab 5 - Part 1 </a>
-                    </p>
-                    <p>
-                        <i class="fas fa-video"></i>
-                        <a href="https://web.microsoftstream.com/video/55366875-a7bb-4139-aecf-508c8d19e95a" target="_blank"> Lab 5 - Part 2 </a>
-                    </p>
-                    <p>
-                        <i class="fas fa-file-powerpoint"></i>
-                        <a href="material/Dr/OOP_Lab05.pptx" target="_blank">  Lab 5 Slides</a>
-                    </p>
-                    <p>
-                        <i class="fas fa-video"></i>
-                        <a href="https://web.microsoftstream.com/video/2da8f39a-7b54-425a-841f-8d099264fd98" target="_blank"> Lab 5 - Hands On Solutions </a>
-                    </p>
-                    <p>
-                        <i class="fas fa-file-powerpoint"></i>
-                        <a href="material/Dr/OOP_Lab05b.pptx" target="_blank">  Lab 5 Slides (With Hands On) </a>
-                    </p>
-                </div>
-            </div>
-            <div class="contentBox">
-                <div class="label">Week 7</div>
-                <div class="cntnt">
-                    <p>
-                        <i class="fas fa-video"></i>
-                        <a href="https://web.microsoftstream.com/video/109064c6-d801-456a-be94-fd4c33bf5d81" target="_blank"> Lecture 7 - (Exception Handling & JavaDocs) "Live" - Part 1 - Dr. Mohamed Mabrouk</a>
-                    </p>
-                    <p>
-                        <i class="fas fa-video"></i>
-                        <a href="https://web.microsoftstream.com/video/888615f5-96c8-4bf1-81b6-ee088c45f023" target="_blank"> Lecture 7 - (Exception Handling & JavaDocs) "Live" - Part 2 - Dr. Mohamed Mabrouk</a>
-                    </p>
-                    <p>
-                        <i class="fas fa-file"></i>
-                        <a href="material/Dr/OOP_L5.pdf" target="_blank"> Lecture 7 - (Exception Handling & JavaDocs) - Dr. Mohamed Mabrouk</a>
-                    </p>
-                </div>
-            </div>
-            <div class="contentBox">
-                <div class="label">Week 8</div>
-                <div class="cntnt">
-                    <p>
-                        Midterms Week
-                    </p>
-                </div>
-            </div>
-            <div class="contentBox">
-                <div class="label">Week 9</div>
-                <div class="cntnt">
-                    <p>
-                        <i class="fas fa-video"></i>
-                        <a href="https://web.microsoftstream.com/video/e80b57fb-9e85-4bd4-95c6-0148df451cc8" target="_blank"> Lecture 8 - (Exception Handling & JavaDocs) "Live" - Part 1 - Dr. Mohamed Mabrouk</a>
-                    </p>
-                    <p>
-                        <i class="fas fa-video"></i>
-                        <a href="https://web.microsoftstream.com/video/023fae08-d478-4772-b764-ab5b85669dd8" target="_blank"> Lecture 8 - (Interfaces) "Live" - Part 2 - Dr. Mohamed Mabrouk</a>
-                    </p>
-                    <p>
-                        <i class="fas fa-file"></i>
-                        <a href="material/Dr/OOP_L6.pdf" target="_blank"> Lecture 8 - (Interfaces) - Dr. Mohamed Mabrouk</a>
-                    </p>
-                    <hr>
-                    <p>
-                        <i class="fas fa-video"></i>
-                        <a href="https://web.microsoftstream.com/video/3cfc0fef-97ed-4022-8c21-c9756ce46def" target="_blank"> Lab 6 </a>
-                    </p>
-                    <p>
-                        <i class="fas fa-file-powerpoint"></i>
-                        <a href="material/Dr/OOP_Lab06.pptx" target="_blank">  Lab 6 Slides Without HandsOn</a>
-                    </p>
-                    <p>
-                        <i class="fas fa-video"></i>
-                        <a href="https://web.microsoftstream.com/video/5aa10fb7-943c-4abd-ace8-8ca49d7f7b44" target="_blank"> Lab 6 - Hands On Solutions </a>
-                    </p>
-                </div>
-            </div>
-            <div class="contentBox">
-                <div class="label">Week 10</div>
-                <div class="cntnt">
-                    <p>
-                        <i class="fas fa-video"></i>
-                        <a href="https://web.microsoftstream.com/video/634f0bc3-4965-4a14-b1ae-18751b027b2e" target="_blank"> Lecture 9 - (Interfaces) "Live" - Dr. Mohamed Mabrouk</a>
-                    </p>
-                    <p>
-                        <i class="fas fa-file"></i>
-                        <a href="material/Dr/OOP_L6.pdf" target="_blank"> Lecture 9 - (Interfaces) - Dr. Mohamed Mabrouk</a>
-                    </p>
-                    <hr>
-                    <p>
-                        <i class="fas fa-video"></i>
-                        <a href="https://web.microsoftstream.com/video/590b7c73-67b6-47e9-8e96-40ee76b4fd9e" target="_blank"> Lab 7 </a>
-                    </p>
-                    <p>
-                        <i class="fas fa-file-powerpoint"></i>
-                        <a href="material/Dr/OOP_Lab07.pptx" target="_blank">  Lab 7 Slides Without HandsOn</a>
-                    </p>
-                    <p>
-                        <i class="fas fa-video"></i>
-                        <a href="https://web.microsoftstream.com/video/a724ea51-8029-4f62-8a15-6073974fc17e" target="_blank"> Lab 7 HandsOn Solutions </a>
-                    </p>
-                    <p>
-                        <i class="fas fa-file-powerpoint"></i>
-                        <a href="material/Dr/OOP_Lab07b.pptx" target="_blank">  Lab 7 Slides With HandsOn</a>
-                    </p>
-                </div>
-            </div>
-            <div class="contentBox">
-                <div class="label">Week 11</div>
-                <div class="cntnt">
-                    <p>
-                        <i class="fas fa-video"></i>
-                        <a href="https://web.microsoftstream.com/video/7f963dbf-24dd-4e4c-a9b7-638945ee3224" target="_blank"> Lab 8 </a>
-                    </p>
-                    <p>
-                        <i class="fas fa-file-powerpoint"></i>
-                        <a href="material/Dr/OOP_Lab08.pptx" target="_blank"> Lab 8 Slides </a>
-                    </p>
-                    <hr>
-                    <p>
-                        <i class="fas fa-file-word"></i>
-                        <a href="assets/AvI.docx" target="_blank"> Abstract Vs Interface (.docx) </a>
-                    </p>
-                </div>
-            </div>
+        <div class="contentBox">
+          <div class="label">Week 1</div>
+          <div class="cntnt">
+            <p>
+              <i class="fas fa-video"></i>
+              <a
+                href="https://web.microsoftstream.com/video/c65c99f5-2aa3-4435-8872-f4082c9f437f?fbclid=IwAR3f3N72dXpO3vr44GhZ1_Vgy-gZaI28iLs_PF56e4GCQksT920kgctQuIY&referrer=https:%2F%2Fl.facebook.com%2F"
+                target="_blank"
+              >
+                Lecture 1 - (Introduction to OOP) "Live" - Dr. Mohamed
+                Mabrouk</a
+              >
+            </p>
+            <p>
+              <i class="fas fa-file"></i>
+              <a href="material/Dr/OOP_L1.pdf" target="_blank">
+                Lecture 1 - (Introduction to OOP) - Dr. Mohamed Mabrouk</a
+              >
+            </p>
+          </div>
         </div>
-
+        <div class="contentBox">
+          <div class="label">Week 2</div>
+          <div class="cntnt">
+            <p>
+              <i class="fas fa-video"></i>
+              <a
+                href="https://web.microsoftstream.com/video/82dd6264-f00d-4601-aea7-afc7bbefe797"
+                target="_blank"
+              >
+                Lecture 2 - (Java Syntax) "Live" - Dr. Mohamed Mabrouk</a
+              >
+            </p>
+            <p>
+              <i class="fas fa-file"></i>
+              <a href="material/Dr/OOP_L2.pdf" target="_blank">
+                Lecture 2 - (Java Syntax) - Dr. Mohamed Mabrouk</a
+              >
+            </p>
+            <hr />
+            <p>
+              <i class="fas fa-video"></i>
+              <a
+                href="https://web.microsoftstream.com/video/2057ab66-d5e7-4b98-a1e9-b1dc203b505d"
+                target="_blank"
+              >
+                Lab 1</a
+              >
+            </p>
+            <p>
+              <i class="fas fa-file"></i>
+              <a href="material/Dr/OOP_Lab01.pdf" target="_blank">
+                Lab 1 Slides
+              </a>
+            </p>
+            <p>
+              <i class="fas fa-download"></i>
+              <a href="material/Dr/OOP_Lab01_Sol.zip" target="_blank">
+                Lab 1 - Solutions (Zip)
+              </a>
+            </p>
+          </div>
+        </div>
+        <div class="contentBox">
+          <div class="label">Week 3</div>
+          <div class="cntnt">
+            <p>
+              <i class="fas fa-video"></i>
+              <a
+                href="https://web.microsoftstream.com/video/89640b0f-2f2e-49cd-82a0-301bd6d0d5fb"
+                target="_blank"
+              >
+                Lecture 3 - (Unified Modeling Language) "Live" - Dr. Mohamed
+                Mabrouk</a
+              >
+            </p>
+            <p>
+              <i class="fas fa-file"></i>
+              <a href="material/Dr/OOP_L2b.pdf" target="_blank">
+                Lecture 3 - (Unified Modeling Language) - Dr. Mohamed Mabrouk
+                (Starting from slide 32)</a
+              >
+            </p>
+            <hr />
+            <p>
+              <i class="fas fa-video"></i>
+              <a
+                href="https://web.microsoftstream.com/video/8792803e-4fe8-46dc-af01-9da8b75e25cb"
+                target="_blank"
+              >
+                Lab 2
+              </a>
+            </p>
+            <p>
+              <i class="fas fa-video"></i>
+              <a
+                href="https://web.microsoftstream.com/video/a735c455-d752-497c-93e0-64be4c8b70de"
+                target="_blank"
+              >
+                Lab 2 - Hands On Solutions
+              </a>
+            </p>
+            <p>
+              <i class="fas fa-file"></i>
+              <a href="material/Dr/OOP_Lab02.pdf" target="_blank">
+                Lab 2 Slides (Without Hands On)
+              </a>
+            </p>
+            <p>
+              <i class="fas fa-file"></i>
+              <a href="material/Dr/OOP_Lab02b.pdf" target="_blank">
+                Lab 2 Slides (With Hands On)
+              </a>
+            </p>
+          </div>
+        </div>
+        <div class="contentBox">
+          <div class="label">Week 4</div>
+          <div class="cntnt">
+            <p>
+              <i class="fas fa-video"></i>
+              <a
+                href="https://web.microsoftstream.com/video/3f3fd6ef-923b-4697-82b5-845a64ea3cfb"
+                target="_blank"
+              >
+                Lecture 4 - (Methods and Strings) "Live" - Dr. Mohamed
+                Mabrouk</a
+              >
+            </p>
+            <p>
+              <i class="fas fa-file"></i>
+              <a href="material/Dr/OOP_L3.pdf" target="_blank">
+                Lecture 4 - (Methods and Strings) - Dr. Mohamed Mabrouk</a
+              >
+            </p>
+            <hr />
+            <p>
+              <i class="fas fa-video"></i>
+              <a
+                href="https://web.microsoftstream.com/video/d537045e-4ff4-4b70-ace6-fff144cd6263"
+                target="_blank"
+              >
+                Lab 3
+              </a>
+            </p>
+            <p>
+              <i class="fas fa-video"></i>
+              <a
+                href="https://web.microsoftstream.com/video/8c09116a-ef32-4c5e-8592-bb12933bad35"
+                target="_blank"
+              >
+                Lab 3 - Hands On Solutions
+              </a>
+            </p>
+            <p>
+              <i class="fas fa-file"></i>
+              <a href="material/Dr/OOP_Lab03.pdf" target="_blank">
+                Lab 3 Slides (Without Hands On)
+              </a>
+            </p>
+            <p>
+              <i class="fas fa-file"></i>
+              <a href="material/Dr/OOP_Lab03b.pdf" target="_blank">
+                Lab 3 Slides (With Hands On)
+              </a>
+            </p>
+          </div>
+        </div>
+        <div class="contentBox">
+          <div class="label">Week 5</div>
+          <div class="cntnt">
+            <p>
+              <i class="fas fa-video"></i>
+              <a
+                href="https://web.microsoftstream.com/video/a6a00273-e506-4531-89b2-4eeabe2e2ba7"
+                target="_blank"
+              >
+                Lecture 5 Part 1 - (Methods and Strings Continued) "Live" - Dr.
+                Mohamed Mabrouk</a
+              >
+            </p>
+            <p>
+              <i class="fas fa-video"></i>
+              <a
+                href="https://web.microsoftstream.com/video/3d8c6f03-ecce-4468-8c45-4b57378c8c95"
+                target="_blank"
+              >
+                Lecture 5 Part 2- (Inheritance & Polymorphism) "Live" - Dr.
+                Mohamed Mabrouk</a
+              >
+            </p>
+            <p>
+              <i class="fas fa-file"></i>
+              <a href="material/Dr/OOP_L4.pdf" target="_blank">
+                Lecture 5 - (Inheritance & Polymorphism) - Dr. Mohamed
+                Mabrouk</a
+              >
+            </p>
+            <hr />
+            <p>
+              <i class="fas fa-video"></i>
+              <a
+                href="https://web.microsoftstream.com/video/12ab5a92-0a70-4524-89c1-f77c6b8b5503"
+                target="_blank"
+              >
+                Lab 4
+              </a>
+            </p>
+            <p>
+              <i class="fas fa-file-powerpoint"></i>
+              <a href="material/Dr/OOP_Lab04.pptx" target="_blank">
+                Lab 4 Slides</a
+              >
+            </p>
+            <p>
+              <i class="fas fa-video"></i>
+              <a
+                href="https://web.microsoftstream.com/video/1a411fe8-7455-4316-9267-9181d92ba435"
+                target="_blank"
+              >
+                Lab 4 - Hands On Solutions
+              </a>
+            </p>
+            <p>
+              <i class="fas fa-file-powerpoint"></i>
+              <a href="material/Dr/OOP_Lab04b.pptx" target="_blank">
+                Lab 4 Slides (With Hands On)
+              </a>
+            </p>
+          </div>
+        </div>
+        <div class="contentBox">
+          <div class="label">Week 6</div>
+          <div class="cntnt">
+            <p>
+              <i class="fas fa-video"></i>
+              <a
+                href="https://web.microsoftstream.com/video/58cfb0f2-8ae6-48b8-9088-02b40c70a8f9"
+                target="_blank"
+              >
+                Lecture 6 - (Inheritance & Polymorphism) "Live" - Dr. Mohamed
+                Mabrouk</a
+              >
+            </p>
+            <p>
+              <i class="fas fa-file"></i>
+              <a href="material/Dr/OOP_L4.pdf" target="_blank">
+                Lecture 6 - (Inheritance and Polymorphism) - Dr. Mohamed
+                Mabrouk</a
+              >
+            </p>
+            <hr />
+            <p>
+              <i class="fas fa-video"></i>
+              <a
+                href="https://web.microsoftstream.com/video/954ba346-3ccf-427d-93f6-c2fc285e659b"
+                target="_blank"
+              >
+                Lab 5 - Part 1
+              </a>
+            </p>
+            <p>
+              <i class="fas fa-video"></i>
+              <a
+                href="https://web.microsoftstream.com/video/55366875-a7bb-4139-aecf-508c8d19e95a"
+                target="_blank"
+              >
+                Lab 5 - Part 2
+              </a>
+            </p>
+            <p>
+              <i class="fas fa-file-powerpoint"></i>
+              <a href="material/Dr/OOP_Lab05.pptx" target="_blank">
+                Lab 5 Slides</a
+              >
+            </p>
+            <p>
+              <i class="fas fa-video"></i>
+              <a
+                href="https://web.microsoftstream.com/video/2da8f39a-7b54-425a-841f-8d099264fd98"
+                target="_blank"
+              >
+                Lab 5 - Hands On Solutions
+              </a>
+            </p>
+            <p>
+              <i class="fas fa-file-powerpoint"></i>
+              <a href="material/Dr/OOP_Lab05b.pptx" target="_blank">
+                Lab 5 Slides (With Hands On)
+              </a>
+            </p>
+          </div>
+        </div>
+        <div class="contentBox">
+          <div class="label">Week 7</div>
+          <div class="cntnt">
+            <p>
+              <i class="fas fa-video"></i>
+              <a
+                href="https://web.microsoftstream.com/video/109064c6-d801-456a-be94-fd4c33bf5d81"
+                target="_blank"
+              >
+                Lecture 7 - (Exception Handling & JavaDocs) "Live" - Part 1 -
+                Dr. Mohamed Mabrouk</a
+              >
+            </p>
+            <p>
+              <i class="fas fa-video"></i>
+              <a
+                href="https://web.microsoftstream.com/video/888615f5-96c8-4bf1-81b6-ee088c45f023"
+                target="_blank"
+              >
+                Lecture 7 - (Exception Handling & JavaDocs) "Live" - Part 2 -
+                Dr. Mohamed Mabrouk</a
+              >
+            </p>
+            <p>
+              <i class="fas fa-file"></i>
+              <a href="material/Dr/OOP_L5.pdf" target="_blank">
+                Lecture 7 - (Exception Handling & JavaDocs) - Dr. Mohamed
+                Mabrouk</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="contentBox">
+          <div class="label">Week 8</div>
+          <div class="cntnt">
+            <p>Midterms Week</p>
+          </div>
+        </div>
+        <div class="contentBox">
+          <div class="label">Week 9</div>
+          <div class="cntnt">
+            <p>
+              <i class="fas fa-video"></i>
+              <a
+                href="https://web.microsoftstream.com/video/e80b57fb-9e85-4bd4-95c6-0148df451cc8"
+                target="_blank"
+              >
+                Lecture 8 - (Exception Handling & JavaDocs) "Live" - Part 1 -
+                Dr. Mohamed Mabrouk</a
+              >
+            </p>
+            <p>
+              <i class="fas fa-video"></i>
+              <a
+                href="https://web.microsoftstream.com/video/023fae08-d478-4772-b764-ab5b85669dd8"
+                target="_blank"
+              >
+                Lecture 8 - (Interfaces) "Live" - Part 2 - Dr. Mohamed
+                Mabrouk</a
+              >
+            </p>
+            <p>
+              <i class="fas fa-file"></i>
+              <a href="material/Dr/OOP_L6.pdf" target="_blank">
+                Lecture 8 - (Interfaces) - Dr. Mohamed Mabrouk</a
+              >
+            </p>
+            <hr />
+            <p>
+              <i class="fas fa-video"></i>
+              <a
+                href="https://web.microsoftstream.com/video/3cfc0fef-97ed-4022-8c21-c9756ce46def"
+                target="_blank"
+              >
+                Lab 6
+              </a>
+            </p>
+            <p>
+              <i class="fas fa-file-powerpoint"></i>
+              <a href="material/Dr/OOP_Lab06.pptx" target="_blank">
+                Lab 6 Slides Without HandsOn</a
+              >
+            </p>
+            <p>
+              <i class="fas fa-video"></i>
+              <a
+                href="https://web.microsoftstream.com/video/5aa10fb7-943c-4abd-ace8-8ca49d7f7b44"
+                target="_blank"
+              >
+                Lab 6 - Hands On Solutions
+              </a>
+            </p>
+          </div>
+        </div>
+        <div class="contentBox">
+          <div class="label">Week 10</div>
+          <div class="cntnt">
+            <p>
+              <i class="fas fa-video"></i>
+              <a
+                href="https://web.microsoftstream.com/video/634f0bc3-4965-4a14-b1ae-18751b027b2e"
+                target="_blank"
+              >
+                Lecture 9 - (Interfaces) "Live" - Dr. Mohamed Mabrouk</a
+              >
+            </p>
+            <p>
+              <i class="fas fa-file"></i>
+              <a href="material/Dr/OOP_L6.pdf" target="_blank">
+                Lecture 9 - (Interfaces) - Dr. Mohamed Mabrouk</a
+              >
+            </p>
+            <hr />
+            <p>
+              <i class="fas fa-video"></i>
+              <a
+                href="https://web.microsoftstream.com/video/590b7c73-67b6-47e9-8e96-40ee76b4fd9e"
+                target="_blank"
+              >
+                Lab 7
+              </a>
+            </p>
+            <p>
+              <i class="fas fa-file-powerpoint"></i>
+              <a href="material/Dr/OOP_Lab07.pptx" target="_blank">
+                Lab 7 Slides Without HandsOn</a
+              >
+            </p>
+            <p>
+              <i class="fas fa-video"></i>
+              <a
+                href="https://web.microsoftstream.com/video/a724ea51-8029-4f62-8a15-6073974fc17e"
+                target="_blank"
+              >
+                Lab 7 HandsOn Solutions
+              </a>
+            </p>
+            <p>
+              <i class="fas fa-file-powerpoint"></i>
+              <a href="material/Dr/OOP_Lab07b.pptx" target="_blank">
+                Lab 7 Slides With HandsOn</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="contentBox">
+          <div class="label">Week 11</div>
+          <div class="cntnt">
+            <p>
+              <i class="fas fa-video"></i>
+              <a
+                href="https://web.microsoftstream.com/video/7f963dbf-24dd-4e4c-a9b7-638945ee3224"
+                target="_blank"
+              >
+                Lab 8
+              </a>
+            </p>
+            <p>
+              <i class="fas fa-file-powerpoint"></i>
+              <a href="material/Dr/OOP_Lab08.pptx" target="_blank">
+                Lab 8 Slides
+              </a>
+            </p>
+            <hr />
+            <p>
+              <i class="fas fa-file-word"></i>
+              <a href="assets/AvI.docx" target="_blank">
+                Abstract Vs Interface (.docx)
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!--Footer-->
     <footer>
-        Developed and maintained by Omar AbdulRahman - 2021
+      Developed and maintained by
+      <a href="https://www.youtube.com/OmarAbdulRahman45" target="_blank"
+        >Omar AbdulRahman</a
+      >
+      - 2021
     </footer>
 
     <script>
-        const accor = document.getElementsByClassName('contentBox');
-        for (i = 0; i < accor.length; i++) {
-            accor[i].addEventListener('click', function() {
-                this.classList.toggle('active')
-            })
-        }
+      const accor = document.getElementsByClassName('contentBox');
+      for (i = 0; i < accor.length; i++) {
+        accor[i].addEventListener('click', function () {
+          this.classList.toggle('active');
+        });
+      }
     </script>
-
-</body>
-
+  </body>
 </html>
