@@ -1,18 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8" />
-
+  <head>
+    <!-- Google tag (gtag.js) [immediately after head tag]-->
     <script
-      src="https://kit.fontawesome.com/e38234dfec.js"
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-EKWFGLGKVR"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'G-EKWFGLGKVR');
+    </script>
+    <!-- Google Ads [between head tags] -->
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8729859208925325"
       crossorigin="anonymous"
     ></script>
-    <script
-      data-ad-client="ca-pub-8729859208925325"
-      async
-      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-    ></script>
+
+    <meta charset="utf-8" />
 
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="commonCourse.css" />
@@ -23,435 +33,775 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#0078E3" />
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-LQ4C5TLEYJ"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-
-      gtag('config', 'G-LQ4C5TLEYJ');
-    </script>
-
     <title>Discrete Mathematics</title>
   </head>
 
-<body>
+  <body>
     <header>
-      <h1>
-        <a href="/">FCIS 2023 <sup>3rd</sup></a>
-      </h1>
+      <a href="/">FCIS 2023 <sup>3rd</sup></a>
     </header>
+
     <div class="container">
-       <div class="hdrs">
+      <div class="hdrs">
         <div class="course">Discrete Mathematics</div>
       </div>
-      
+
       <div class="progress" id="progress">Progress :</div>
       <div class="progressContainer">
         <div class="progressBack" id="back"></div>
       </div>
 
-            <!--Alert-->
-            <div class="alert" id="alert">
-                <p>
-                    <a href="material/Exams/OldFinals/DM_2015.pdf" target="_blank">(2015)</a> , <a href="material/Exams/OldFinals/DM_2016.pdf" target="_blank">(2016)</a> , <a href="https://drive.google.com/drive/folders/1F3Lc-f2wDNO_L5N9eJyh7-iMIhNTPJg6?fbclid=IwAR3Dn6nn7DoFEz3FaMozV6rO3y0e6NRgiLwYM_kD0bAW9CL4m5BOBhADuqE"
-                        target="_blank"> (2017 : 2018) </a>
-                </p>
-                <p>
-                    Please note that these exams have (Discrete Maths + Linear Algebra) combined together, so leave the Linear Algebra part and only take the Discrete
-                </p>
-            </div>
+      <!--Alert-->
+      <div class="alert" id="alert">
+        <p>
+          <a href="material/Exams/OldFinals/DM_2015.pdf" target="_blank"
+            >(2015)</a
+          >
+          ,
+          <a href="material/Exams/OldFinals/DM_2016.pdf" target="_blank"
+            >(2016)</a
+          >
+          ,
+          <a
+            href="https://drive.google.com/drive/folders/1F3Lc-f2wDNO_L5N9eJyh7-iMIhNTPJg6?fbclid=IwAR3Dn6nn7DoFEz3FaMozV6rO3y0e6NRgiLwYM_kD0bAW9CL4m5BOBhADuqE"
+            target="_blank"
+          >
+            (2017 : 2018)
+          </a>
+        </p>
+        <p>
+          Please note that these exams have (Discrete Maths + Linear Algebra)
+          combined together, so leave the Linear Algebra part and only take the
+          Discrete
+        </p>
+      </div>
 
-            <button class="accordion fixed">Resources</button>
-                <div class="panel">
-                    <p>
-                        <i class="fas fa-book"></i>
-                        <a href="material/Books/DM.pdf" target="_blank"> Course Book - Discrete Mathematics and Its Applications, By Kenneth H. Rosen - 7th Edition</a>
-                    </p>
-                    <p>
-                        <i class="fas fa-book"></i>
-                        <a href="http://www.cs.ucr.edu/~acald013/public/tmp/sol_dmaia_rosen.pdf" target="_blank"> Solutions Guide - Discrete Mathematics and Its Applications</a>
-                    </p>
-                    <p>
-                        <i class="fab fa-youtube"></i>
-                        <a href="https://youtu.be/ihj299iVoOw" target="_blank" class="addCheck"> Quiz + Solutions (17 Questions) - Omar AbdulRahman</a>
-                    </p>
-                    <p>
-                        <i class="fas fa-file"></i>
-                        <a href="material/Exams/DM_Midterm1.pdf" target="_blank" class="addCheck"> Midterm Model A</a>
-                    </p>
-                    <p>
-                        <i class="fas fa-file"></i>
-                        <a href="material/Exams/DM_Midterm2.pdf" target="_blank" class="addCheck"> Midterm Model B</a>
-                    </p>
-                    <p>
-                        <i class="fab fa-youtube"></i>
-                        <a href="https://www.youtube.com/playlist?list=PLoK2Lr1miEm_WKBBBHUQJRXaumduqkM4S&fbclid=IwAR0jxPFph_xw4iFVRyTyLp46Nd-qfbRdcqKPFZU0kj3hKVnDt0MmmcTDLfg" target="_blank"> Discrete Mathamtics playlist - FCIH OCW </a>
-                    </p>
-                </div>
-                <button class="accordion">Dr. Mohamed Ibrahim - Sections</button>
-                <div class="panel">
-                    <p>
-                        <i class="fas fa-file"></i>
-                        <a href="https://drive.google.com/file/d/1T5Rg7gxRR-1VwDncXUxt9O8HJl0M8Z9x/view?fbclid=IwAR0radNub7xduDmsu-mFv31ztL1p2goCMAukU4H_2oeqj7kcX1os2-tMnWE" target="_blank " class="addCheck"> Section 1 - Proposition</a>
-                    </p>
-                    <p>
-                        <i class="fas fa-file"></i>
-                        <a href="https://drive.google.com/file/d/1SrcD40m_ZnM8_Qx0rcefO3_77rxcLdTx/view?fbclid=IwAR0qkUoJTYRm8cOLiazEouHRVyaf7-I-fGUAgLl9S01d691f8LrJntbTZ9o" target="_blank " class="addCheck"> Section 2 - Equivalences</a>
-                    </p>
-                    <p>
-                        <i class="fas fa-file"></i>
-                        <a href="https://drive.google.com/file/d/1TXI8lTi-i9CMzCeUKDyMCJ3dHqJRJDpI/view?fbclid=IwAR0qkaoHG24uLLNfLQYqta_fNNCOcynTkn7UuHzxwrns0V6aq3sOlEo3KG4" target="_blank " class="addCheck"> Section 3 - Exercises</a>
-                    </p>
-                    <p>
-                        <i class="fas fa-file"></i>
-                        <a href="https://drive.google.com/file/d/1U3qbJ26BclRDKy_zlXiHdtqjxjIqadbF/view?fbclid=IwAR0av9C1iDVz4WVDEbn4mXHOsfLzX8bPSf6UsFC4r2LMEN3Z0JB5u76_WnA" target="_blank " class="addCheck"> Section 4 - Quantifiers</a>
-                    </p>
-                    <p>
-                        <i class="fas fa-file"></i>
-                        <a href="https://drive.google.com/file/d/1ttM1_zolo05REHxqazmm6j0B68ocxgIE/view?fbclid=IwAR0PxHjGyqJdMraAqMG94WM1ZVxLRfAX8mzsowNVZPchQbFq4vy-ervidZQ" target="_blank " class="addCheck"> Section 5 - Rules of Interference</a>
-                    </p>
-                    <p>
-                        <i class="fas fa-file"></i>
-                        <a href="material/Dr/DM_S6.pdf" target="_blank " class="addCheck"> Section 6 - Proving Theorems</a>
-                    </p>
-                    <p>
-                        <i class="fas fa-file"></i>
-                        <a href="https://drive.google.com/file/d/10o5zutEJjfi-XTzSVJUci_4m7MGlTS5h/view?fbclid=IwAR1qLXZTciu0qi1XJfCobxdgSPdomMYyTcDzqJQA5iaBB5PO9PqiqLQkRow" target="_blank " class="addCheck"> Section 7 - Sets</a>
-                    </p>
-                </div>
-                <button class="accordion">Dr. Salsabil Amin Lectures</button>
-                <div class="panel">
-                    <p>
-                        <i class="fas fa-exclamation-triangle"></i> I wouldn't recommend learning from here, there are many missing info
-                    </p>
-                    <p>
-                        <i class="fas fa-video "></i>
-                        <a href="https://web.microsoftstream.com/video/14278f46-61e1-4b1e-b634-1f83ca1afa38 " target="_blank " class="addCheck"> Lecture 1 - (Propositional Logic and Equivalence) - Dr. Salsabil Amin</a>
-                    </p>
-                    <p>
-                        <i class="fas fa-video "></i>
-                        <a href="https://web.microsoftstream.com/video/ae21cb33-c6ba-4d08-9aed-840d4908115d " target="_blank " class="addCheck"> Lecture 1 - (Propositional Logic and Equivalence) "Live " - Dr. Salsabil Amin</a>
-                    </p>
-                    <hr>
-                    <p>
-                        <i class="fas fa-video "></i>
-                        <a href="https://web.microsoftstream.com/video/f8193a67-834a-4189-a443-a64b60af1653 " target="_blank " class="addCheck"> Lecture 2 - (Predicate Logic) "Live " - Dr. Salsabil Amin</a>
-                    </p>
-                    <hr>
-                    <p>
-                        <i class="fas fa-video "></i>
-                        <a href="https://web.microsoftstream.com/video/b7dcbf89-d416-41b5-bdb0-414fc0d62084 " target="_blank " class="addCheck"> Lecture 3 - (Nested Quantifiers, Rules of Inference) "Live " - Dr. Salsabil Amin</a>
-                    </p>
-                    <hr>
-                    <p>
-                        <i class="fas fa-video "></i>
-                        <a href="https://web.microsoftstream.com/video/3249b14a-5a77-4d95-9fcd-422ce7cc8160 " target="_blank " class="addCheck"> Lecture 4 - (Rules of Inference Continued) "Live " - Dr. Salsabil Amin</a>
-                    </p>
-                    <hr>
-                    <p>
-                        <i class="fas fa-video "></i>
-                        <a href="https://web.microsoftstream.com/video/a2b58ff6-f0eb-4611-adda-410fabac1d2f " target="_blank " class="addCheck"> Lecture 5 - (Mathematical Induction, Introduction to Realtions) "Live " - Dr. Salsabil Amin</a>
-                    </p>
-                    <hr>
-                    <p>
-                        <i class="fas fa-video "></i>
-                        <a href="https://web.microsoftstream.com/video/5ba4982a-d23e-4df9-8451-067a13db277b" target="_blank " class="addCheck"> Lecture 6 - (Realtions) "Live " - Dr. Salsabil Amin</a>
-                    </p>
-                </div>
-                
-      <!-- FirstAdTest -->
-      <ins
-        class="adsbygoogle"
-        style="display: block"
-        data-ad-client="ca-pub-8729859208925325"
-        data-ad-slot="6565956232"
-        data-ad-format="auto"
-        data-full-width-responsive="true"
-      ></ins>
-      <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
-      
-                <button class="accordion">Week 1</button>
-                <div class="panel">
-                    <p>
-                        <i class="fas fa-info-circle "></i> We started in Week 3 with Dr. Mohamed Abdel-Aal
-                    </p>
-                    <hr>
-                    <h4>Students' Materials</h4>
-                    <p>
-                        <i class="fas fa-file"></i>
-                        <a href="material/St/my.pdf " target="_blank " class="addCheck"> Lecture 1 - Mohamed Yehia (4 Pages)</a>
-                    </p>
-                    <p>
-                        <i class="fas fa-file"></i>
-                        <a href="material/St/de.pdf " target="_blank " class="addCheck"> Lecture 1 - Dondon Emad (2 Pages)</a>
-                    </p>
-                    </p>
-                    <p>
-                        <i class="fas fa-file"></i>
-                        <a href="material/St/ok.pdf " target="_blank " class="addCheck"> Lecture 1 - Omar Khaled (3 Pages)</a>
-                    </p>
-                </div>
-                <button class="accordion">Week 2</button>
-                <div class="panel">
-                    <p>
-                        <i class="fas fa-file "></i>
-                        <a href="material/Dr/DM_Sec01.pdf " target="_blank " class="addCheck"> Section 1</a>
-                    </p>
-                    <p>
-                        <i class="fas fa-video "></i>
-                        <a href="https://web.microsoftstream.com/video/b2e11433-bad6-4d97-9188-787b5a3fe774 " target="_blank " class="addCheck"> Section 1 - Part 1</a>
-                    </p>
-                    <p>
-                        <i class="fas fa-video "></i>
-                        <a href="https://web.microsoftstream.com/video/1a8f57f2-3da7-44ff-be60-d34f8be99359 " target="_blank " class="addCheck"> Section 1 - Part 2</a>
-                    </p>
-                    <hr>
-                    <h4>Students' Materials</h4>
-                    <p>
-                        <i class="fas fa-file "></i>
-                        <a href="material/St/abdo_DM01.pdf " target="_blank " class="addCheck"> Section 1 - Abdo Hassan (4 Pages)</a>
-                    </p>
-                </div>
-                <button class="accordion">Week 3</button>
-                <div class="panel">
-                    <p>
-                        <i class="fas fa-video "></i>
-                        <a href="https://drive.google.com/file/d/1v1VAC9bnir3keb1g8QhMUioxigEbSQbD/" target="_blank " class="addCheck"> Lecture 1 - (Propositional Logic) - Dr. Mohamed Abdel-Aal</a>
-                    </p>
-                    <p>
-                        <i class="fas fa-file "></i>
-                        <a href="material/Dr/DM_L1.pdf " target="_blank " class="addCheck"> Lecture 1 - (Propositional Logic) - Dr. Mohamed Abdel-Aal</a>
-                    </p>
-                    <hr>
-                    <p>
-                        <i class="fas fa-video "></i>
-                        <a href="https://web.microsoftstream.com/video/584bb54e-34e0-4dcc-a787-96fe2a66c100 " target="_blank " class="addCheck"> Section 2</a>
-                    </p>
-                    <hr>
-                    <h4>Students' Materials</h4>
-                    <p>
-                        <i class="fab fa-youtube"></i>
-                        <a href="https://youtu.be/mxKNM2XZVck" target="_blank " class="addCheck"> Lecture 1 Part 1 - Omar AbdulRahman</a>
-                    </p>
-                    <p>
-                        <i class="fab fa-youtube"></i>
-                        <a href="https://youtu.be/cOIX_T9Jlnk" target="_blank " class="addCheck"> Lecture 1 Part 2 - Omar AbdulRahman</a>
-                    </p>
-                </div>
-                <button class="accordion">Week 4</button>
-                <div class="panel">
-                    <p>
-                        <i class="fas fa-video "></i>
-                        <a href="https://drive.google.com/file/d/1EUIUdU9n-wk9f0U6gl1byMovxY_3axeL/" target="_blank " class="addCheck"> Lecture 2 - (Predicate Logic) - Dr. Mohamed Abdel-Aal</a>
-                    </p>
-                    <p>
-                        <i class="fas fa-file "></i>
-                        <a href="material/Dr/DM_L2.pdf " target="_blank " class="addCheck"> Lecture 2 - (Predicate Logic) - Dr. Mohamed Abdel-Aal</a>
-                    </p>
-                    <hr>
-                    <p>
-                        <i class="fas fa-video "></i>
-                        <a href="https://web.microsoftstream.com/video/e86fb6d7-fa67-4b6c-8cae-9d27694b4aae " target="_blank " class="addCheck"> Section 3 - Part 1</a>
-                    </p>
-                    <p>
-                        <i class="fas fa-video "></i>
-                        <a href="https://web.microsoftstream.com/video/3bedb470-d311-4c17-a5e4-ef53f3a42048 " target="_blank " class="addCheck"> Section 3 - Part 2</a>
-                    </p>
-                    <hr>
-                    <h4>Students' Materials</h4>
-                    <p>
-                        <i class="fab fa-youtube"></i>
-                        <a href="https://youtu.be/QwzRv_oNMOc" target="_blank " class="addCheck"> Lecture 2 Part 1 - Omar AbdulRahman</a>
-                    </p>
-                    <p>
-                        <i class="fab fa-youtube"></i>
-                        <a href="https://youtu.be/zBBQ9dJgWq8" target="_blank " class="addCheck"> Lecture 2 Part 2 - Omar AbdulRahman</a>
-                    </p>
-                </div>
-                <button class="accordion">Week 5</button>
-                <div class="panel">
-                    <p>
-                        <i class="fas fa-video "></i>
-                        <a href="https://drive.google.com/file/d/1N_m0NNfu0Pa1JEyQbCXvbrqHevHEjFY5/" target="_blank " class="addCheck"> Lecture 3 - (Introduction to Proofs - Induction) - Dr. Mohamed Abdel-Aal</a>
-                    </p>
-                    <p>
-                        <i class="fas fa-file "></i>
-                        <a href="material/Dr/DM_L3.pdf " target="_blank " class="addCheck"> Lecture 3 - (Introduction to Proofs - Induction) - Dr. Mohamed Abdel-Aal</a>
-                    </p>
-                    <hr>
-                    <p>
-                        <i class="fas fa-video "></i>
-                        <a href="https://web.microsoftstream.com/video/68120fe8-5499-49a8-83db-130d54b33deb " target="_blank " class="addCheck"> Section 4 Part 1 - Methods of Proofs</a>
-                    </p>
-                    <p>
-                        <i class="fas fa-file "></i>
-                        <a href="material/Dr/DM_Sec04.pdf " target="_blank " class="addCheck"> Section 4 Part 1 - Methods of Proofs</a>
-                    </p>
-                    <hr>
-                    <p>
-                        <i class="fas fa-video "></i>
-                        <a href="https://web.microsoftstream.com/video/ca58fb80-bb79-41f3-a438-a8d114db0592 " target="_blank " class="addCheck"> Section 4 Part 2 - Mathematical Induction</a>
-                    </p>
-                    <p>
-                        <i class="fas fa-file "></i>
-                        <a href="material/Dr/DM_Sec04b.pdf " target="_blank " class="addCheck"> Section 4 Part 2 - Mathematical Induction</a>
-                    </p>
-                    <hr>
-                    <h4>Students' Materials</h4>
-                    <p>
-                        <i class="fab fa-youtube"></i>
-                        <a href="https://youtu.be/J8MXhqeTs04" target="_blank " class="addCheck"> Lecture 3 Part 1 - Omar AbdulRahman</a>
-                    </p>
-                    <p>
-                        <i class="fab fa-youtube"></i>
-                        <a href="https://youtu.be/TqdVI8oboXQ" target="_blank " class="addCheck"> Lecture 3 Part 2 - Omar AbdulRahman</a>
-                    </p>
-                </div>
-                <button class="accordion">Week 6</button>
-                <div class="panel">
-                    <p>
-                        <i class="fas fa-video "></i>
-                        <a href="https://drive.google.com/file/d/1imIv30W_6WaD6HGUFY6aWYLuijLRzx7h/" target="_blank " class="addCheck"> Lecture 4 - (Basic Structures: Sets) - Dr. Mohamed Abdel-Aal</a>
-                    </p>
-                    <p>
-                        <i class="fas fa-file "></i>
-                        <a href="material/Dr/DM_L4.pdf " target="_blank " class="addCheck"> Lecture 4 - (Basic Structures: Sets) - Dr. Mohamed Abdel-Aal</a>
-                    </p>
-                    <hr>
-                    <p>
-                        <i class="fas fa-file "></i>
-                        <a href="material/Dr/DM_Sec5.pdf" target="_blank " class="addCheck"> Section 5 - Sets</a>
-                    </p>
-                    <p>
-                        <i class="fas fa-video "></i>
-                        <a href="https://web.microsoftstream.com/video/585e56c0-b524-48ed-a4ac-af75ab272e34 " target="_blank " class="addCheck"> Section 5 - Sets</a>
-                    </p>
-                    <hr>
-                    <h4>Students' Materials</h4>
-                    <p>
-                        <i class="fab fa-youtube"></i>
-                        <a href="https://youtu.be/P0LYjql0lZQ" target="_blank " class="addCheck"> Lecture 4 Part 1 - Omar AbdulRahman</a>
-                    </p>
-                    <p>
-                        <i class="fab fa-youtube"></i>
-                        <a href="https://youtu.be/Bj8jn_tzSZo" target="_blank " class="addCheck"> Lecture 4 Part 2 - Omar AbdulRahman</a>
-                    </p>
-                </div>
-                <button class="accordion">Week 7</button>
-                <div class="panel">
-                    <p>
-                        <i class="fas fa-video "></i>
-                        <a href="https://drive.google.com/file/d/1B9OnzBBnn0l5wZF5XNhDjw3J7_6198B9/" target="_blank " class="addCheck"> Lecture 5 - (Basic Structures: Functions, Sequences and Summations) - Dr. Mohamed Abdel-Aal</a>
-                    </p>
-                    <p>
-                        <i class="fas fa-file "></i>
-                        <a href="material/Dr/DM_L5.pdf " target="_blank " class="addCheck"> Lecture 5 - (Basic Structures: Functions, Sequences and Summations) - Dr. Mohamed Abdel-Aal</a>
-                    </p>
-                    <hr>
-                    <p>
-                        <i class="fas fa-file "></i>
-                        <a href="material/Dr/DM_Sec6.pdf" target="_blank " class="addCheck"> Section 6 - Functions</a>
-                    </p>
-                    <p>
-                        <i class="fas fa-video "></i>
-                        <a href="https://web.microsoftstream.com/video/e09f1746-d826-40be-a152-3a716f7a0de8" target="_blank " class="addCheck"> Section 6 - Functions</a>
-                    </p>
-                </div>
-                <button class="accordion">Week 8</button>
-                <div class="panel">
-                    <p>
-                        Midterms Week
-                    </p>
-                </div>
-                <button class="accordion">Week 9</button>
-                <div class="panel">
-                    <p>
-                        <i class="fas fa-video "></i>
-                        <a href="https://drive.google.com/file/d/1IisajNuUlT23iiMCtQkcYP30nZYj0vwo/" target="_blank " class="addCheck"> Lecture 6 - (Relations) - Dr. Mohamed Abdel-Aal</a>
-                    </p>
-                    <p>
-                        <i class="fas fa-file "></i>
-                        <a href="material/Dr/DM_L6.pdf " target="_blank " class="addCheck"> Lecture 6 - (Relations) - Dr. Mohamed Abdel-Aal</a>
-                    </p>
-                    <hr>
-                    <p>
-                        <i class="fas fa-file "></i>
-                        <a href="material/Dr/DM_Sec7.pdf" target="_blank " class="addCheck"> Section 7 - Relations</a>
-                    </p>
-                    <p>
-                        <i class="fas fa-video "></i>
-                        <a href="https://web.microsoftstream.com/video/804d2627-85b8-4f81-808b-fe07240148e2" target="_blank " class="addCheck"> Section 7 - Relations</a>
-                    </p>
-                    <hr>
-                    <h4>Students' Materials</h4>
-                    <p>
-                        <i class="fab fa-youtube"></i>
-                        <a href="https://youtu.be/Cg-CMrkOyQk" target="_blank " class="addCheck"> How to solve Transitive Closure problems - Omar AbdulRahman</a>
-                    </p>
-                </div>
-                <button class="accordion">Week 10</button>
-                <div class="panel">
-                    <p>
-                        <i class="fas fa-video "></i>
-                        <a href="https://drive.google.com/file/d/1jEXzf-e6kYxJWCJCDRe4oaL3VCxQmGT_/" target="_blank " class="addCheck"> Lecture 7 - (Number Theory & Cryptography) - Dr. Mohamed Abdel-Aal</a>
-                    </p>
-                    <p>
-                        <i class="fas fa-file "></i>
-                        <a href="material/Dr/DM_L7.pdf " target="_blank " class="addCheck"> Lecture 7 - (Number Theory & Cryptography) - Dr. Mohamed Abdel-Aal</a>
-                    </p>
-                    <hr>
-                    <p>
-                        <i class="fas fa-file "></i>
-                        <a href="material/Dr/DM_Sec8.pdf" target="_blank " class="addCheck"> Section 8 - Number Theory</a>
-                    </p>
-                    <p>
-                        <i class="fas fa-video "></i>
-                        <a href="https://web.microsoftstream.com/video/02d682a6-3d1c-45a8-a071-23211d13d938" target="_blank " class="addCheck"> Section 8 - Number Theory (Part 1)</a>
-                    </p>
-                    <p>
-                        <i class="fas fa-video "></i>
-                        <a href="https://web.microsoftstream.com/video/4bbfe369-26e2-4676-896b-a2fbd01cfcc7" target="_blank " class="addCheck"> Section 8 - Number Theory (Part 2)</a>
-                    </p>
-                    <hr>
-                    <h4>Students' Materials</h4>
-                    <p>
-                        <i class="fas fa-file"></i> &nbsp;&nbsp;&nbsp;Number Theory Summary - Mohamed Magdii <a href="material/St/NT1.jpeg" target="_blank">(Page 1)</a> <a href="material/St/NT2.jpeg" target="_blank " class="addCheck">(Page 2)</a>
-                    </p>
-                </div>
-                <button class="accordion">Week 11</button>
-                <div class="panel">
-                    <p>
-                        <i class="fas fa-video "></i>
-                        <a href="https://drive.google.com/file/d/1TSjIOq6g9qrzAP3CtjMAdUGbQtVyYWxe/" target="_blank " class="addCheck"> Lecture 8 - (Graph Theory) - Dr. Mohamed Abdel-Aal</a>
-                    </p>
-                    <p>
-                        <i class="fas fa-file "></i>
-                        <a href="material/Dr/DM_L8.pdf " target="_blank " class="addCheck"> Lecture 8 - (Graph Theory) - Dr. Mohamed Abdel-Aal</a>
-                    </p>
-                </div>
-        </div>
-        
+      <button class="accordion fixed">Resources</button>
+      <div class="panel">
+        <p>
+          <i class="fas fa-book"></i>
+          <a href="material/Books/DM.pdf" target="_blank">
+            Course Book - Discrete Mathematics and Its Applications, By Kenneth
+            H. Rosen - 7th Edition</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-book"></i>
+          <a
+            href="http://www.cs.ucr.edu/~acald013/public/tmp/sol_dmaia_rosen.pdf"
+            target="_blank"
+          >
+            Solutions Guide - Discrete Mathematics and Its Applications</a
+          >
+        </p>
+        <p>
+          <i class="fab fa-youtube"></i>
+          <a
+            href="https://youtu.be/ihj299iVoOw"
+            target="_blank"
+            class="addCheck"
+          >
+            Quiz + Solutions (17 Questions) - Omar AbdulRahman</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file"></i>
+          <a
+            href="material/Exams/DM_Midterm1.pdf"
+            target="_blank"
+            class="addCheck"
+          >
+            Midterm Model A</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file"></i>
+          <a
+            href="material/Exams/DM_Midterm2.pdf"
+            target="_blank"
+            class="addCheck"
+          >
+            Midterm Model B</a
+          >
+        </p>
+        <p>
+          <i class="fab fa-youtube"></i>
+          <a
+            href="https://www.youtube.com/playlist?list=PLoK2Lr1miEm_WKBBBHUQJRXaumduqkM4S&fbclid=IwAR0jxPFph_xw4iFVRyTyLp46Nd-qfbRdcqKPFZU0kj3hKVnDt0MmmcTDLfg"
+            target="_blank"
+          >
+            Discrete Mathamtics playlist - FCIH OCW
+          </a>
+        </p>
+      </div>
+      <button class="accordion">Dr. Mohamed Ibrahim - Sections</button>
+      <div class="panel">
+        <p>
+          <i class="fas fa-file"></i>
+          <a
+            href="https://drive.google.com/file/d/1T5Rg7gxRR-1VwDncXUxt9O8HJl0M8Z9x/view?fbclid=IwAR0radNub7xduDmsu-mFv31ztL1p2goCMAukU4H_2oeqj7kcX1os2-tMnWE"
+            target="_blank "
+            class="addCheck"
+          >
+            Section 1 - Proposition</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file"></i>
+          <a
+            href="https://drive.google.com/file/d/1SrcD40m_ZnM8_Qx0rcefO3_77rxcLdTx/view?fbclid=IwAR0qkUoJTYRm8cOLiazEouHRVyaf7-I-fGUAgLl9S01d691f8LrJntbTZ9o"
+            target="_blank "
+            class="addCheck"
+          >
+            Section 2 - Equivalences</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file"></i>
+          <a
+            href="https://drive.google.com/file/d/1TXI8lTi-i9CMzCeUKDyMCJ3dHqJRJDpI/view?fbclid=IwAR0qkaoHG24uLLNfLQYqta_fNNCOcynTkn7UuHzxwrns0V6aq3sOlEo3KG4"
+            target="_blank "
+            class="addCheck"
+          >
+            Section 3 - Exercises</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file"></i>
+          <a
+            href="https://drive.google.com/file/d/1U3qbJ26BclRDKy_zlXiHdtqjxjIqadbF/view?fbclid=IwAR0av9C1iDVz4WVDEbn4mXHOsfLzX8bPSf6UsFC4r2LMEN3Z0JB5u76_WnA"
+            target="_blank "
+            class="addCheck"
+          >
+            Section 4 - Quantifiers</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file"></i>
+          <a
+            href="https://drive.google.com/file/d/1ttM1_zolo05REHxqazmm6j0B68ocxgIE/view?fbclid=IwAR0PxHjGyqJdMraAqMG94WM1ZVxLRfAX8mzsowNVZPchQbFq4vy-ervidZQ"
+            target="_blank "
+            class="addCheck"
+          >
+            Section 5 - Rules of Interference</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file"></i>
+          <a href="material/Dr/DM_S6.pdf" target="_blank " class="addCheck">
+            Section 6 - Proving Theorems</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file"></i>
+          <a
+            href="https://drive.google.com/file/d/10o5zutEJjfi-XTzSVJUci_4m7MGlTS5h/view?fbclid=IwAR1qLXZTciu0qi1XJfCobxdgSPdomMYyTcDzqJQA5iaBB5PO9PqiqLQkRow"
+            target="_blank "
+            class="addCheck"
+          >
+            Section 7 - Sets</a
+          >
+        </p>
+      </div>
+      <button class="accordion">Dr. Salsabil Amin Lectures</button>
+      <div class="panel">
+        <p>
+          <i class="fas fa-exclamation-triangle"></i> I wouldn't recommend
+          learning from here, there are many missing info
+        </p>
+        <p>
+          <i class="fas fa-video"></i>
+          <a
+            href="https://web.microsoftstream.com/video/14278f46-61e1-4b1e-b634-1f83ca1afa38 "
+            target="_blank "
+            class="addCheck"
+          >
+            Lecture 1 - (Propositional Logic and Equivalence) - Dr. Salsabil
+            Amin</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-video"></i>
+          <a
+            href="https://web.microsoftstream.com/video/ae21cb33-c6ba-4d08-9aed-840d4908115d "
+            target="_blank "
+            class="addCheck"
+          >
+            Lecture 1 - (Propositional Logic and Equivalence) "Live " - Dr.
+            Salsabil Amin</a
+          >
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-video"></i>
+          <a
+            href="https://web.microsoftstream.com/video/f8193a67-834a-4189-a443-a64b60af1653 "
+            target="_blank "
+            class="addCheck"
+          >
+            Lecture 2 - (Predicate Logic) "Live " - Dr. Salsabil Amin</a
+          >
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-video"></i>
+          <a
+            href="https://web.microsoftstream.com/video/b7dcbf89-d416-41b5-bdb0-414fc0d62084 "
+            target="_blank "
+            class="addCheck"
+          >
+            Lecture 3 - (Nested Quantifiers, Rules of Inference) "Live " - Dr.
+            Salsabil Amin</a
+          >
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-video"></i>
+          <a
+            href="https://web.microsoftstream.com/video/3249b14a-5a77-4d95-9fcd-422ce7cc8160 "
+            target="_blank "
+            class="addCheck"
+          >
+            Lecture 4 - (Rules of Inference Continued) "Live " - Dr. Salsabil
+            Amin</a
+          >
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-video"></i>
+          <a
+            href="https://web.microsoftstream.com/video/a2b58ff6-f0eb-4611-adda-410fabac1d2f "
+            target="_blank "
+            class="addCheck"
+          >
+            Lecture 5 - (Mathematical Induction, Introduction to Realtions)
+            "Live " - Dr. Salsabil Amin</a
+          >
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-video"></i>
+          <a
+            href="https://web.microsoftstream.com/video/5ba4982a-d23e-4df9-8451-067a13db277b"
+            target="_blank "
+            class="addCheck"
+          >
+            Lecture 6 - (Realtions) "Live " - Dr. Salsabil Amin</a
+          >
+        </p>
+      </div>
+
+      <button class="accordion">Week 1</button>
+      <div class="panel">
+        <p>
+          <i class="fas fa-info-circle"></i> We started in Week 3 with Dr.
+          Mohamed Abdel-Aal
+        </p>
+        <hr />
+        <h4>Students' Materials</h4>
+        <p>
+          <i class="fas fa-file"></i>
+          <a href="material/St/my.pdf " target="_blank " class="addCheck">
+            Lecture 1 - Mohamed Yehia (4 Pages)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file"></i>
+          <a href="material/St/de.pdf " target="_blank " class="addCheck">
+            Lecture 1 - Dondon Emad (2 Pages)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file"></i>
+          <a href="material/St/ok.pdf " target="_blank " class="addCheck">
+            Lecture 1 - Omar Khaled (3 Pages)</a
+          >
+        </p>
+      </div>
+      <button class="accordion">Week 2</button>
+      <div class="panel">
+        <p>
+          <i class="fas fa-file"></i>
+          <a href="material/Dr/DM_Sec01.pdf " target="_blank " class="addCheck">
+            Section 1</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-video"></i>
+          <a
+            href="https://web.microsoftstream.com/video/b2e11433-bad6-4d97-9188-787b5a3fe774 "
+            target="_blank "
+            class="addCheck"
+          >
+            Section 1 - Part 1</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-video"></i>
+          <a
+            href="https://web.microsoftstream.com/video/1a8f57f2-3da7-44ff-be60-d34f8be99359 "
+            target="_blank "
+            class="addCheck"
+          >
+            Section 1 - Part 2</a
+          >
+        </p>
+        <hr />
+        <h4>Students' Materials</h4>
+        <p>
+          <i class="fas fa-file"></i>
+          <a
+            href="material/St/abdo_DM01.pdf "
+            target="_blank "
+            class="addCheck"
+          >
+            Section 1 - Abdo Hassan (4 Pages)</a
+          >
+        </p>
+      </div>
+      <button class="accordion">Week 3</button>
+      <div class="panel">
+        <p>
+          <i class="fas fa-video"></i>
+          <a
+            href="https://drive.google.com/file/d/1v1VAC9bnir3keb1g8QhMUioxigEbSQbD/"
+            target="_blank "
+            class="addCheck"
+          >
+            Lecture 1 - (Propositional Logic) - Dr. Mohamed Abdel-Aal</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file"></i>
+          <a href="material/Dr/DM_L1.pdf " target="_blank " class="addCheck">
+            Lecture 1 - (Propositional Logic) - Dr. Mohamed Abdel-Aal</a
+          >
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-video"></i>
+          <a
+            href="https://web.microsoftstream.com/video/584bb54e-34e0-4dcc-a787-96fe2a66c100 "
+            target="_blank "
+            class="addCheck"
+          >
+            Section 2</a
+          >
+        </p>
+        <hr />
+        <h4>Students' Materials</h4>
+        <p>
+          <i class="fab fa-youtube"></i>
+          <a
+            href="https://youtu.be/mxKNM2XZVck"
+            target="_blank "
+            class="addCheck"
+          >
+            Lecture 1 Part 1 - Omar AbdulRahman</a
+          >
+        </p>
+        <p>
+          <i class="fab fa-youtube"></i>
+          <a
+            href="https://youtu.be/cOIX_T9Jlnk"
+            target="_blank "
+            class="addCheck"
+          >
+            Lecture 1 Part 2 - Omar AbdulRahman</a
+          >
+        </p>
+      </div>
+      <button class="accordion">Week 4</button>
+      <div class="panel">
+        <p>
+          <i class="fas fa-video"></i>
+          <a
+            href="https://drive.google.com/file/d/1EUIUdU9n-wk9f0U6gl1byMovxY_3axeL/"
+            target="_blank "
+            class="addCheck"
+          >
+            Lecture 2 - (Predicate Logic) - Dr. Mohamed Abdel-Aal</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file"></i>
+          <a href="material/Dr/DM_L2.pdf " target="_blank " class="addCheck">
+            Lecture 2 - (Predicate Logic) - Dr. Mohamed Abdel-Aal</a
+          >
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-video"></i>
+          <a
+            href="https://web.microsoftstream.com/video/e86fb6d7-fa67-4b6c-8cae-9d27694b4aae "
+            target="_blank "
+            class="addCheck"
+          >
+            Section 3 - Part 1</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-video"></i>
+          <a
+            href="https://web.microsoftstream.com/video/3bedb470-d311-4c17-a5e4-ef53f3a42048 "
+            target="_blank "
+            class="addCheck"
+          >
+            Section 3 - Part 2</a
+          >
+        </p>
+        <hr />
+        <h4>Students' Materials</h4>
+        <p>
+          <i class="fab fa-youtube"></i>
+          <a
+            href="https://youtu.be/QwzRv_oNMOc"
+            target="_blank "
+            class="addCheck"
+          >
+            Lecture 2 Part 1 - Omar AbdulRahman</a
+          >
+        </p>
+        <p>
+          <i class="fab fa-youtube"></i>
+          <a
+            href="https://youtu.be/zBBQ9dJgWq8"
+            target="_blank "
+            class="addCheck"
+          >
+            Lecture 2 Part 2 - Omar AbdulRahman</a
+          >
+        </p>
+      </div>
+      <button class="accordion">Week 5</button>
+      <div class="panel">
+        <p>
+          <i class="fas fa-video"></i>
+          <a
+            href="https://drive.google.com/file/d/1N_m0NNfu0Pa1JEyQbCXvbrqHevHEjFY5/"
+            target="_blank "
+            class="addCheck"
+          >
+            Lecture 3 - (Introduction to Proofs - Induction) - Dr. Mohamed
+            Abdel-Aal</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file"></i>
+          <a href="material/Dr/DM_L3.pdf " target="_blank " class="addCheck">
+            Lecture 3 - (Introduction to Proofs - Induction) - Dr. Mohamed
+            Abdel-Aal</a
+          >
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-video"></i>
+          <a
+            href="https://web.microsoftstream.com/video/68120fe8-5499-49a8-83db-130d54b33deb "
+            target="_blank "
+            class="addCheck"
+          >
+            Section 4 Part 1 - Methods of Proofs</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file"></i>
+          <a href="material/Dr/DM_Sec04.pdf " target="_blank " class="addCheck">
+            Section 4 Part 1 - Methods of Proofs</a
+          >
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-video"></i>
+          <a
+            href="https://web.microsoftstream.com/video/ca58fb80-bb79-41f3-a438-a8d114db0592 "
+            target="_blank "
+            class="addCheck"
+          >
+            Section 4 Part 2 - Mathematical Induction</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file"></i>
+          <a
+            href="material/Dr/DM_Sec04b.pdf "
+            target="_blank "
+            class="addCheck"
+          >
+            Section 4 Part 2 - Mathematical Induction</a
+          >
+        </p>
+        <hr />
+        <h4>Students' Materials</h4>
+        <p>
+          <i class="fab fa-youtube"></i>
+          <a
+            href="https://youtu.be/J8MXhqeTs04"
+            target="_blank "
+            class="addCheck"
+          >
+            Lecture 3 Part 1 - Omar AbdulRahman</a
+          >
+        </p>
+        <p>
+          <i class="fab fa-youtube"></i>
+          <a
+            href="https://youtu.be/TqdVI8oboXQ"
+            target="_blank "
+            class="addCheck"
+          >
+            Lecture 3 Part 2 - Omar AbdulRahman</a
+          >
+        </p>
+      </div>
+      <button class="accordion">Week 6</button>
+      <div class="panel">
+        <p>
+          <i class="fas fa-video"></i>
+          <a
+            href="https://drive.google.com/file/d/1imIv30W_6WaD6HGUFY6aWYLuijLRzx7h/"
+            target="_blank "
+            class="addCheck"
+          >
+            Lecture 4 - (Basic Structures: Sets) - Dr. Mohamed Abdel-Aal</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file"></i>
+          <a href="material/Dr/DM_L4.pdf " target="_blank " class="addCheck">
+            Lecture 4 - (Basic Structures: Sets) - Dr. Mohamed Abdel-Aal</a
+          >
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-file"></i>
+          <a href="material/Dr/DM_Sec5.pdf" target="_blank " class="addCheck">
+            Section 5 - Sets</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-video"></i>
+          <a
+            href="https://web.microsoftstream.com/video/585e56c0-b524-48ed-a4ac-af75ab272e34 "
+            target="_blank "
+            class="addCheck"
+          >
+            Section 5 - Sets</a
+          >
+        </p>
+        <hr />
+        <h4>Students' Materials</h4>
+        <p>
+          <i class="fab fa-youtube"></i>
+          <a
+            href="https://youtu.be/P0LYjql0lZQ"
+            target="_blank "
+            class="addCheck"
+          >
+            Lecture 4 Part 1 - Omar AbdulRahman</a
+          >
+        </p>
+        <p>
+          <i class="fab fa-youtube"></i>
+          <a
+            href="https://youtu.be/Bj8jn_tzSZo"
+            target="_blank "
+            class="addCheck"
+          >
+            Lecture 4 Part 2 - Omar AbdulRahman</a
+          >
+        </p>
+      </div>
+      <button class="accordion">Week 7</button>
+      <div class="panel">
+        <p>
+          <i class="fas fa-video"></i>
+          <a
+            href="https://drive.google.com/file/d/1B9OnzBBnn0l5wZF5XNhDjw3J7_6198B9/"
+            target="_blank "
+            class="addCheck"
+          >
+            Lecture 5 - (Basic Structures: Functions, Sequences and Summations)
+            - Dr. Mohamed Abdel-Aal</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file"></i>
+          <a href="material/Dr/DM_L5.pdf " target="_blank " class="addCheck">
+            Lecture 5 - (Basic Structures: Functions, Sequences and Summations)
+            - Dr. Mohamed Abdel-Aal</a
+          >
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-file"></i>
+          <a href="material/Dr/DM_Sec6.pdf" target="_blank " class="addCheck">
+            Section 6 - Functions</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-video"></i>
+          <a
+            href="https://web.microsoftstream.com/video/e09f1746-d826-40be-a152-3a716f7a0de8"
+            target="_blank "
+            class="addCheck"
+          >
+            Section 6 - Functions</a
+          >
+        </p>
+      </div>
+      <button class="accordion">Week 8</button>
+      <div class="panel">
+        <p>Midterms Week</p>
+      </div>
+      <button class="accordion">Week 9</button>
+      <div class="panel">
+        <p>
+          <i class="fas fa-video"></i>
+          <a
+            href="https://drive.google.com/file/d/1IisajNuUlT23iiMCtQkcYP30nZYj0vwo/"
+            target="_blank "
+            class="addCheck"
+          >
+            Lecture 6 - (Relations) - Dr. Mohamed Abdel-Aal</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file"></i>
+          <a href="material/Dr/DM_L6.pdf " target="_blank " class="addCheck">
+            Lecture 6 - (Relations) - Dr. Mohamed Abdel-Aal</a
+          >
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-file"></i>
+          <a href="material/Dr/DM_Sec7.pdf" target="_blank " class="addCheck">
+            Section 7 - Relations</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-video"></i>
+          <a
+            href="https://web.microsoftstream.com/video/804d2627-85b8-4f81-808b-fe07240148e2"
+            target="_blank "
+            class="addCheck"
+          >
+            Section 7 - Relations</a
+          >
+        </p>
+        <hr />
+        <h4>Students' Materials</h4>
+        <p>
+          <i class="fab fa-youtube"></i>
+          <a
+            href="https://youtu.be/Cg-CMrkOyQk"
+            target="_blank "
+            class="addCheck"
+          >
+            How to solve Transitive Closure problems - Omar AbdulRahman</a
+          >
+        </p>
+      </div>
+      <button class="accordion">Week 10</button>
+      <div class="panel">
+        <p>
+          <i class="fas fa-video"></i>
+          <a
+            href="https://drive.google.com/file/d/1jEXzf-e6kYxJWCJCDRe4oaL3VCxQmGT_/"
+            target="_blank "
+            class="addCheck"
+          >
+            Lecture 7 - (Number Theory & Cryptography) - Dr. Mohamed
+            Abdel-Aal</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file"></i>
+          <a href="material/Dr/DM_L7.pdf " target="_blank " class="addCheck">
+            Lecture 7 - (Number Theory & Cryptography) - Dr. Mohamed
+            Abdel-Aal</a
+          >
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-file"></i>
+          <a href="material/Dr/DM_Sec8.pdf" target="_blank " class="addCheck">
+            Section 8 - Number Theory</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-video"></i>
+          <a
+            href="https://web.microsoftstream.com/video/02d682a6-3d1c-45a8-a071-23211d13d938"
+            target="_blank "
+            class="addCheck"
+          >
+            Section 8 - Number Theory (Part 1)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-video"></i>
+          <a
+            href="https://web.microsoftstream.com/video/4bbfe369-26e2-4676-896b-a2fbd01cfcc7"
+            target="_blank "
+            class="addCheck"
+          >
+            Section 8 - Number Theory (Part 2)</a
+          >
+        </p>
+        <hr />
+        <h4>Students' Materials</h4>
+        <p>
+          <i class="fas fa-file"></i> &nbsp;&nbsp;&nbsp;Number Theory Summary -
+          Mohamed Magdii
+          <a href="material/St/NT1.jpeg" target="_blank">(Page 1)</a>
+          <a href="material/St/NT2.jpeg" target="_blank " class="addCheck"
+            >(Page 2)</a
+          >
+        </p>
+      </div>
+      <button class="accordion">Week 11</button>
+      <div class="panel">
+        <p>
+          <i class="fas fa-video"></i>
+          <a
+            href="https://drive.google.com/file/d/1TSjIOq6g9qrzAP3CtjMAdUGbQtVyYWxe/"
+            target="_blank "
+            class="addCheck"
+          >
+            Lecture 8 - (Graph Theory) - Dr. Mohamed Abdel-Aal</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file"></i>
+          <a href="material/Dr/DM_L8.pdf " target="_blank " class="addCheck">
+            Lecture 8 - (Graph Theory) - Dr. Mohamed Abdel-Aal</a
+          >
+        </p>
+      </div>
+    </div>
+
     <!--Footer-->
     <footer>
       Developed and maintained by
       <a href="https://omar45.com/" target="_blank">Omar AbdulRahman</a>
     </footer>
 
+    <!-- Buy me a coffee widget -->
+    <script
+      data-name="BMC-Widget"
+      data-cfasync="false"
+      src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+      data-id="omar45"
+      data-description="Support me on Buy me a coffee!"
+      data-message="Thanks for visiting, you can support me here"
+      data-color="#FFDD00"
+      data-position="Right"
+      data-x_margin="18"
+      data-y_margin="18"
+    ></script>
 
     <script src="scripts/accordion.js"></script>
-    <script src="scripts/check.js"></script>    
-
-
-</body>
-
+    <script src="scripts/check.js"></script>
+  </body>
 </html>

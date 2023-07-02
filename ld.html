@@ -1,17 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-    <meta charset="utf-8" />
-
+  <head>
+    <!-- Google tag (gtag.js) [immediately after head tag]-->
     <script
-      src="https://kit.fontawesome.com/e38234dfec.js"
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-EKWFGLGKVR"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'G-EKWFGLGKVR');
+    </script>
+    <!-- Google Ads [between head tags] -->
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8729859208925325"
       crossorigin="anonymous"
     ></script>
-    <script
-      data-ad-client="ca-pub-8729859208925325"
-      async
-      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-    ></script>
+
+    <meta charset="utf-8" />
 
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="commonCourse.css" />
@@ -22,35 +33,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#0078E3" />
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-LQ4C5TLEYJ"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-
-      gtag('config', 'G-LQ4C5TLEYJ');
-    </script>
-
     <title>Logic Design</title>
-    </head>
+  </head>
 
-
-<body>
-     <header>
-      <h1>
-        <a href="/">FCIS 2023 <sup>3rd</sup></a>
-      </h1>
+  <body>
+    <header>
+      <a href="/">FCIS 2023 <sup>3rd</sup></a>
     </header>
 
     <div class="container">
-         <div class="hdrs">
+      <div class="hdrs">
         <div class="course">Logic Design</div>
       </div>
 
@@ -59,398 +51,683 @@
         <div class="progressBack" id="back"></div>
       </div>
 
-            <!--Alert-->
-            <div class="alert" id="alert">
-                <p>
-                    Final Exam 2021 <a href="material/Exams/2021/LD.pdf">here</a>
-                </p>
-            </div>
+      <!--Alert-->
+      <div class="alert" id="alert">
+        <p>Final Exam 2021 <a href="material/Exams/2021/LD.pdf">here</a></p>
+      </div>
 
-            <button class="accordion fixed">Resources</button>
-            <div class="panel">
-                    <p>
-                        <i class="fas fa-file-alt"></i>
-                        <a href="https://drive.google.com/drive/folders/1k7IqPdIyAyfu0h-xVa0Wyzrki3SiaxO7?fbclid=IwAR16mizivMNc1XHaziuLENvWiRMXhDWmKb8FPYPE_InEuQDz1_UJqbNUYHI" target="_blank" class="addCheck"> Previous Final Exams (2014 : 2019) </a>
-                    </p>
-                    <p>
-                        <i class="fas fa-info-circle"></i>
-                        <a href="https://web.microsoftstream.com/video/198ba477-0f7b-4ae6-a12c-69e31cf63326" target="_blank" class="addCheck"> Course Information (Video) </a>
-                    </p>
-                    <p>
-                        <i class="fas fa-book"></i>
-                        <a href="material/Books/DD.pdf" target="_blank"> DIGITAL DESGIN (M. Morris Mano and Michael Ciletti) 5th Ed.</a>
-                    </p>
-                    <p>
-                        <i class="fas fa-book"></i>
-                        <a href="material/Books/DD_Sol_5.pdf" target="_blank"> DIGITAL DESGIN (Solutions) 5th Ed.</a>
-                    </p>
-                    <p>
-                        <i class="fas fa-book"></i>
-                        <a href="material/Books/DD_Sol_4.pdf" target="_blank"> DIGITAL DESGIN (Solutions) 4th Ed.</a>
-                    </p>
-                    </p>
-                    <p>
-                        <i class="fas fa-download"></i>
-                        <a href="https://sourceforge.net/projects/gatesim/?fbclid=IwAR0dKz_WNf9ylSurNmKS8CahVHdu2mA0ZG_9lnzVOcmxE02-ikZJjCKoS0s" target="_blank">Logic Gate Simulator</a>
-                    </p>
-                    <p>
-                        <i class="fas fa-file"></i>
-                        <a href="material/Dr/LD_LabNotes.pdf" target="_blank"> Lab Notes </a>
-                    </p>
-                    <p>
-                        <i class="fab fa-youtube"></i>
-                        <a href="https://www.youtube.com/playlist?list=PL6ElMp8lKLCCOk7-MmhJ42erd7wf67I08&fbclid=IwAR0nzGzK_Y0thM2K48YLV1nEfxHEdL432Ja_WayZX-3s0cIcE1bgnewtE1Q" target="_blank"> Logic Design playlist - FOE ASU </a>
-                    </p>
-            </div>
-            
-      <!-- FirstAdTest -->
-      <ins
-        class="adsbygoogle"
-        style="display: block"
-        data-ad-client="ca-pub-8729859208925325"
-        data-ad-slot="6565956232"
-        data-ad-format="auto"
-        data-full-width-responsive="true"
-      ></ins>
-      <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
-                
-            <button class="accordion">Week 1</button>
-            <div class="panel">
-                <p>
-                    <i class="fas fa-video"></i>
-                    <a href="https://web.microsoftstream.com/video/7809141a-0d88-40ba-b5f5-caee8de5954c" target="_blank" class="addCheck"> Lecture 1 - (Digital Systems and Binary Numbers) - Dr. Mirvat Al-Qutt</a>
-                </p>
-                <p>
-                    <i class="fas fa-file"></i>
-                    <a href="material/Dr/LD_L1.pdf" target="_blank" class="addCheck"> Lecture 1 - (Digital Systems and Binary Numbers) - Dr. Mirvat Al-Qutt</a>
-                </p>
-                <hr>
-                <h4>Students' Materials</h4>
-                <p>
-                    <i class="fas fa-file"></i>
-                    <a href="material/St/se.pdf" target="_blank" class="addCheck"> Lecture 1 - Sohila Elsaed (4 Pages)  "Check the lecture first"</a>
-                </p>
-            </div>
+      <button class="accordion fixed">Resources</button>
+      <div class="panel">
+        <p>
+          <i class="fas fa-file-alt"></i>
+          <a
+            href="https://drive.google.com/drive/folders/1k7IqPdIyAyfu0h-xVa0Wyzrki3SiaxO7?fbclid=IwAR16mizivMNc1XHaziuLENvWiRMXhDWmKb8FPYPE_InEuQDz1_UJqbNUYHI"
+            target="_blank"
+            class="addCheck"
+          >
+            Previous Final Exams (2014 : 2019)
+          </a>
+        </p>
+        <p>
+          <i class="fas fa-info-circle"></i>
+          <a
+            href="https://web.microsoftstream.com/video/198ba477-0f7b-4ae6-a12c-69e31cf63326"
+            target="_blank"
+            class="addCheck"
+          >
+            Course Information (Video)
+          </a>
+        </p>
+        <p>
+          <i class="fas fa-book"></i>
+          <a href="material/Books/DD.pdf" target="_blank">
+            DIGITAL DESGIN (M. Morris Mano and Michael Ciletti) 5th Ed.</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-book"></i>
+          <a href="material/Books/DD_Sol_5.pdf" target="_blank">
+            DIGITAL DESGIN (Solutions) 5th Ed.</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-book"></i>
+          <a href="material/Books/DD_Sol_4.pdf" target="_blank">
+            DIGITAL DESGIN (Solutions) 4th Ed.</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-download"></i>
+          <a
+            href="https://sourceforge.net/projects/gatesim/?fbclid=IwAR0dKz_WNf9ylSurNmKS8CahVHdu2mA0ZG_9lnzVOcmxE02-ikZJjCKoS0s"
+            target="_blank"
+            >Logic Gate Simulator</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file"></i>
+          <a href="material/Dr/LD_LabNotes.pdf" target="_blank"> Lab Notes </a>
+        </p>
+        <p>
+          <i class="fab fa-youtube"></i>
+          <a
+            href="https://www.youtube.com/playlist?list=PL6ElMp8lKLCCOk7-MmhJ42erd7wf67I08&fbclid=IwAR0nzGzK_Y0thM2K48YLV1nEfxHEdL432Ja_WayZX-3s0cIcE1bgnewtE1Q"
+            target="_blank"
+          >
+            Logic Design playlist - FOE ASU
+          </a>
+        </p>
+      </div>
 
-            <button class="accordion">Week 2</button>
-            <div class="panel">
-                <p>
-                    <i class="fas fa-exclamation-triangle"></i>
-                    <a href="https://elearning.cis.asu.edu.eg/undergraduate/mod/assign/view.php?id=4278" target="_blank" class="addCheck"> Assignment A (Link on LMS) </a>
-                </p>
-                <p>
-                    <i class="fas fa-file"></i>
-                    <a href="material/Dr/LD_AsA.pdf" target="_blank" class="addCheck"> Assignment A (PDF) </a>
-                </p>
-                <hr>
-                <p>
-                    <i class="fas fa-video"></i>
-                    <a href="https://web.microsoftstream.com/video/d5c1bdbe-0e9b-48eb-a238-87b70a33dc98" target="_blank" class="addCheck"> Lecture 2 - (Arithmatic Operations, Boolean Algebra, and Logic Gates) - Dr. Mirvat Al-Qutt (MS Stream)</a>
-                </p>
-                <p>
-                    <i class="fas fa-file"></i>
-                    <a href="material/Dr/LD_L2.pdf" target="_blank" class="addCheck"> Lecture 2 - (Arithmatic Operations, Boolean Algebra, and Logic Gates) - Dr. Mirvat Al-Qutt </a>
-                </p>
-                <hr>
-                <p>
-                    <i class="fas fa-video"></i>
-                    <a href="https://web.microsoftstream.com/video/1c30cc68-3521-451f-9357-cf4135a24570" target="_blank" class="addCheck"> Lab 1 (MS Stream)</a>
-                </p>
-                <hr>
-                <p>
-                    <i class="fas fa-file"></i>
-                    <a href="material/Dr/LD_T1.pdf" target="_blank" class="addCheck"> Tutorial 1 </a>
-                </p>
-                <p>
-                    <i class="fas fa-video"></i>
-                    <a href="https://web.microsoftstream.com/video/7bcaf529-12e3-4862-ac14-766793e411a0" target="_blank" class="addCheck"> Tutorial 1 Solutions</a>
-                </p>
-                <p>
-                    <i class="fas fa-file-alt"></i>
-                    <a href="material/Dr/LD_T1_Sol.pdf" target="_blank" class="addCheck"> Tutorial 1 Solutions</a>
-                </p>
-                <hr>
-                <h4>Students' Materials</h4>
-                <p>
-                    <i class="fas fa-file-alt"></i>
-                    <a href="https://drive.google.com/file/d/1-zxk_1uynZeNJKEcLco2KpxiHUcmvNdT/view?fbclid=IwAR13J28WvgZC7btpNorB1H-brn-heoPQ_Au44SLQ7_In1dQysUx-VUfUvOY" target="_blank" class="addCheck"> Tutorial 1 Solutions - Sarah ElGebaly</a>
-                </p>
-            </div>
+      <button class="accordion">Week 1</button>
+      <div class="panel">
+        <p>
+          <i class="fas fa-video"></i>
+          <a
+            href="https://web.microsoftstream.com/video/7809141a-0d88-40ba-b5f5-caee8de5954c"
+            target="_blank"
+            class="addCheck"
+          >
+            Lecture 1 - (Digital Systems and Binary Numbers) - Dr. Mirvat
+            Al-Qutt</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file"></i>
+          <a href="material/Dr/LD_L1.pdf" target="_blank" class="addCheck">
+            Lecture 1 - (Digital Systems and Binary Numbers) - Dr. Mirvat
+            Al-Qutt</a
+          >
+        </p>
+        <hr />
+        <h4>Students' Materials</h4>
+        <p>
+          <i class="fas fa-file"></i>
+          <a href="material/St/se.pdf" target="_blank" class="addCheck">
+            Lecture 1 - Sohila Elsaed (4 Pages) "Check the lecture first"</a
+          >
+        </p>
+      </div>
 
-            <button class="accordion">Week 3</button>
-            <div class="panel">
-                <p>
-                    <i class="fas fa-exclamation-triangle"></i>
-                    <a href="https://elearning.cis.asu.edu.eg/undergraduate/mod/assign/view.php?id=4690" target="_blank" class="addCheck"> Assignment B (Link on LMS) </a>
-                </p>
-                <p>
-                    <i class="fas fa-file"></i>
-                    <a href="material/Dr/LD_AsB.pdf" target="_blank" class="addCheck"> Assignment B (PDF) </a>
-                </p>
-                <hr>
-                <p>
-                    <i class="fas fa-video"></i>
-                    <a href="https://web.microsoftstream.com/video/94eb0e71-978f-4521-996f-99c4780be29c" target="_blank" class="addCheck"> Lecture 3 - (Boolean Algebra, and Logic Gates) - Dr. Mirvat Al-Qutt (MS Stream) </a>
-                </p>
-                <p>
-                    <i class="fas fa-file"></i>
-                    <a href="material/Dr/LD_L3.pdf" target="_blank" class="addCheck"> Lecture 3 - (Boolean Algebra, and Logic Gates) - Dr. Mirvat Al-Qutt </a>
-                </p>
-                <hr>
-                <p>
-                    <i class="fas fa-video"></i>
-                    <a href="https://web.microsoftstream.com/video/7d9ae1c4-61b5-431b-ae98-e507e869b0d9" target="_blank" class="addCheck"> Lab 2 (MS Stream)</a>
-                </p>
-                <hr>
-                <p>
-                    <i class="fas fa-file"></i>
-                    <a href="material/Dr/LD_T2.pdf" target="_blank" class="addCheck"> Tutorial 2 </a>
-                </p>
-                <p>
-                    <i class="fas fa-video"></i>
-                    <a href="https://web.microsoftstream.com/video/e07efa61-ac47-4e89-8f73-13890b26acb5" target="_blank" class="addCheck"> Tutorial 2 Solutions </a>
-                </p>
-                <hr>
-                <h4>Students' Materials</h4>
-                <p>
-                    <i class="fas fa-file-alt"></i>
-                    <a href="https://drive.google.com/file/d/1-6KBka-XGo5pdhLqc6TSPw3UPIsfNi_r/view?fbclid=IwAR1x7jBiBL08ZlnGVBtElywxT78N7KiSIhHZ4-Jk034ETfcaQEO-_dOC05E" target="_blank" class="addCheck"> Tutorial 2 Solutions - Sarah ElGebaly</a>
-                </p>
-            </div>
-            
-            <button class="accordion">Week 4</button>
-            <div class="panel">
-                <p>
-                    <i class="fas fa-exclamation-triangle"></i>
-                    <a href="https://elearning.cis.asu.edu.eg/undergraduate/mod/assign/view.php?id=5139" target="_blank" class="addCheck"> Assignment C (Link on LMS) </a>
-                </p>
-                <p>
-                    <i class="fas fa-file"></i>
-                    <a href="material/Dr/LD_AsC.pdf" target="_blank" class="addCheck"> Assignment C (PDF) </a>
-                </p>
-                <hr>
-                <p>
-                    <i class="fas fa-video"></i>
-                    <a href="https://web.microsoftstream.com/video/52fe048e-89f7-4c8e-852e-4429eb1a3cc1" target="_blank" class="addCheck"> Chapter 2 Recap - Dr. Mirvat Al-Qutt </a>
-                </p>
-                <p>
-                    <i class="fas fa-video"></i>
-                    <a href="https://web.microsoftstream.com/video/cc90d842-46f3-453f-afa4-17ce888399ef" target="_blank" class="addCheck"> Lecture 4 - (Gate Level Minimization, K-Maps) - Dr. Mirvat Al-Qutt </a>
-                </p>
-                <p>
-                    <i class="fas fa-file"></i>
-                    <a href="material/Dr/LD_L4.pdf" target="_blank" class="addCheck"> Lecture 4 - (Gate Level Minimization, K-Maps) - Dr. Mirvat Al-Qutt </a>
-                </p>
-                <hr>
-                <p>
-                    <i class="fas fa-video"></i>
-                    <a href="https://web.microsoftstream.com/video/61abd6da-361b-4457-82d4-947a9396cc58" target="_blank" class="addCheck"> Lab 3 </a>
-                </p>
-                <hr>
-                <p>
-                    <i class="fas fa-file"></i>
-                    <a href="material/Dr/LD_T3.pdf" target="_blank" class="addCheck"> Tutorial 3 </a>
-                </p>
-                <p>
-                    <i class="fas fa-video"></i>
-                    <a href="https://web.microsoftstream.com/video/2db22016-834a-4be1-895d-4dbc1ddf2580" target="_blank" class="addCheck"> Tutorial 3 Solutions </a>
-                </p>
-                <hr>
-                <h4>Students' Materials</h4>
-                <p>
-                    <i class="fas fa-file-alt"></i>
-                    <a href="https://drive.google.com/file/d/1-mXFeEyGDNN4119bo4eYjovBaJa9V-jG/view?fbclid=IwAR0nZXNNcxX8bIAHaC0GWulPQpgS6eLmAKFvsIjicTYyf1WxOiBi-A36Rqs" target="_blank" class="addCheck"> Tutorial 3 Solutions - Sarah ElGebaly</a>
-                </p>
-            </div>
-            
-            <button class="accordion">Week 5</button>
-            <div class="panel">
-                <p>
-                    <i class="fas fa-exclamation-triangle"></i>
-                    <a href="https://elearning.cis.asu.edu.eg/undergraduate/mod/assign/view.php?id=5705" target="_blank" class="addCheck"> Assignment D (Link on LMS) </a>
-                </p>
-                <p>
-                    <i class="fas fa-file"></i>
-                    <a href="material/Dr/LD_AsD.pdf" target="_blank" class="addCheck"> Assignment D (PDF) </a>
-                </p>
-                <hr>
-                <p>
-                    <i class="fas fa-video"></i>
-                    <a href="https://web.microsoftstream.com/video/d2a0116e-9eed-48fe-b5be-a5bd385ebff8" target="_blank" class="addCheck"> Lecture 5 - (Combinational Logic) - Dr. Mirvat Al-Qutt </a>
-                </p>
-                <p>
-                    <i class="fas fa-file"></i>
-                    <a href="material/Dr/LD_L5.pdf" target="_blank" class="addCheck"> Lecture 5 - (Combinational Logic) - Dr. Mirvat Al-Qutt </a>
-                </p>
-                <hr>
-                <p>
-                    <i class="fas fa-video"></i>
-                    <a href="https://web.microsoftstream.com/video/580b8cf6-e318-4a57-a6e9-11c9b7d94623" target="_blank" class="addCheck"> Lab 4 </a>
-                </p>
-                <hr>
-                <p>
-                    <i class="fas fa-file"></i>
-                    <a href="material/Dr/LD_T4.pdf" target="_blank" class="addCheck"> Tutorial 4 </a>
-                </p>
-                <p>
-                    <i class="fas fa-video"></i>
-                    <a href="https://web.microsoftstream.com/video/ef58291e-b2f8-4f45-9047-cc37207fec32" target="_blank" class="addCheck"> Tutorial 4 Solutions </a>
-                </p>
-            </div>
+      <button class="accordion">Week 2</button>
+      <div class="panel">
+        <p>
+          <i class="fas fa-exclamation-triangle"></i>
+          <a
+            href="https://elearning.cis.asu.edu.eg/undergraduate/mod/assign/view.php?id=4278"
+            target="_blank"
+            class="addCheck"
+          >
+            Assignment A (Link on LMS)
+          </a>
+        </p>
+        <p>
+          <i class="fas fa-file"></i>
+          <a href="material/Dr/LD_AsA.pdf" target="_blank" class="addCheck">
+            Assignment A (PDF)
+          </a>
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-video"></i>
+          <a
+            href="https://web.microsoftstream.com/video/d5c1bdbe-0e9b-48eb-a238-87b70a33dc98"
+            target="_blank"
+            class="addCheck"
+          >
+            Lecture 2 - (Arithmatic Operations, Boolean Algebra, and Logic
+            Gates) - Dr. Mirvat Al-Qutt (MS Stream)</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file"></i>
+          <a href="material/Dr/LD_L2.pdf" target="_blank" class="addCheck">
+            Lecture 2 - (Arithmatic Operations, Boolean Algebra, and Logic
+            Gates) - Dr. Mirvat Al-Qutt
+          </a>
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-video"></i>
+          <a
+            href="https://web.microsoftstream.com/video/1c30cc68-3521-451f-9357-cf4135a24570"
+            target="_blank"
+            class="addCheck"
+          >
+            Lab 1 (MS Stream)</a
+          >
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-file"></i>
+          <a href="material/Dr/LD_T1.pdf" target="_blank" class="addCheck">
+            Tutorial 1
+          </a>
+        </p>
+        <p>
+          <i class="fas fa-video"></i>
+          <a
+            href="https://web.microsoftstream.com/video/7bcaf529-12e3-4862-ac14-766793e411a0"
+            target="_blank"
+            class="addCheck"
+          >
+            Tutorial 1 Solutions</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-file-alt"></i>
+          <a href="material/Dr/LD_T1_Sol.pdf" target="_blank" class="addCheck">
+            Tutorial 1 Solutions</a
+          >
+        </p>
+        <hr />
+        <h4>Students' Materials</h4>
+        <p>
+          <i class="fas fa-file-alt"></i>
+          <a
+            href="https://drive.google.com/file/d/1-zxk_1uynZeNJKEcLco2KpxiHUcmvNdT/view?fbclid=IwAR13J28WvgZC7btpNorB1H-brn-heoPQ_Au44SLQ7_In1dQysUx-VUfUvOY"
+            target="_blank"
+            class="addCheck"
+          >
+            Tutorial 1 Solutions - Sarah ElGebaly</a
+          >
+        </p>
+      </div>
 
-            <button class="accordion">Week 6</button>
-            <div class="panel">
-                <p>
-                    <i class="fas fa-video"></i>
-                    <a href="https://web.microsoftstream.com/video/8d0f90d0-c604-442d-9b28-4294cd680b38" target="_blank" class="addCheck"> Lecture 6 - (Combinational Logic) - Dr. Mirvat Al-Qutt </a>
-                </p>
-                <p>
-                    <i class="fas fa-file"></i>
-                    <a href="material/Dr/LD_L6.pdf" target="_blank" class="addCheck"> Lecture 6 - (Combinational Logic) - Dr. Mirvat Al-Qutt </a>
-                </p>
-                <hr>
-                <p>
-                    <i class="fas fa-video"></i>
-                    <a href="https://web.microsoftstream.com/video/b1d4d000-3270-4b4c-8689-ef7f369c021c" target="_blank" class="addCheck"> Lab 5 </a>
-                </p>
-                <hr>
-                <p>
-                    <i class="fas fa-file"></i>
-                    <a href="material/Dr/LD_T5.pdf" target="_blank" class="addCheck"> Tutorial 5 </a>
-                </p>
-                <p>
-                    <i class="fas fa-video"></i>
-                    <a href="https://web.microsoftstream.com/video/b2854f1f-b7ee-4112-a3f4-e93dffec961a" target="_blank" class="addCheck"> Tutorial 5 Solutions </a>
-                </p>
-            </div>
+      <button class="accordion">Week 3</button>
+      <div class="panel">
+        <p>
+          <i class="fas fa-exclamation-triangle"></i>
+          <a
+            href="https://elearning.cis.asu.edu.eg/undergraduate/mod/assign/view.php?id=4690"
+            target="_blank"
+            class="addCheck"
+          >
+            Assignment B (Link on LMS)
+          </a>
+        </p>
+        <p>
+          <i class="fas fa-file"></i>
+          <a href="material/Dr/LD_AsB.pdf" target="_blank" class="addCheck">
+            Assignment B (PDF)
+          </a>
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-video"></i>
+          <a
+            href="https://web.microsoftstream.com/video/94eb0e71-978f-4521-996f-99c4780be29c"
+            target="_blank"
+            class="addCheck"
+          >
+            Lecture 3 - (Boolean Algebra, and Logic Gates) - Dr. Mirvat Al-Qutt
+            (MS Stream)
+          </a>
+        </p>
+        <p>
+          <i class="fas fa-file"></i>
+          <a href="material/Dr/LD_L3.pdf" target="_blank" class="addCheck">
+            Lecture 3 - (Boolean Algebra, and Logic Gates) - Dr. Mirvat Al-Qutt
+          </a>
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-video"></i>
+          <a
+            href="https://web.microsoftstream.com/video/7d9ae1c4-61b5-431b-ae98-e507e869b0d9"
+            target="_blank"
+            class="addCheck"
+          >
+            Lab 2 (MS Stream)</a
+          >
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-file"></i>
+          <a href="material/Dr/LD_T2.pdf" target="_blank" class="addCheck">
+            Tutorial 2
+          </a>
+        </p>
+        <p>
+          <i class="fas fa-video"></i>
+          <a
+            href="https://web.microsoftstream.com/video/e07efa61-ac47-4e89-8f73-13890b26acb5"
+            target="_blank"
+            class="addCheck"
+          >
+            Tutorial 2 Solutions
+          </a>
+        </p>
+        <hr />
+        <h4>Students' Materials</h4>
+        <p>
+          <i class="fas fa-file-alt"></i>
+          <a
+            href="https://drive.google.com/file/d/1-6KBka-XGo5pdhLqc6TSPw3UPIsfNi_r/view?fbclid=IwAR1x7jBiBL08ZlnGVBtElywxT78N7KiSIhHZ4-Jk034ETfcaQEO-_dOC05E"
+            target="_blank"
+            class="addCheck"
+          >
+            Tutorial 2 Solutions - Sarah ElGebaly</a
+          >
+        </p>
+      </div>
 
-            <button class="accordion">Week 7</button>
-            <div class="panel">
-                <p>
-                    <i class="fas fa-video"></i>
-                    <a href="https://drive.google.com/file/d/1_zQ1qkOxBHeMdQoZo_UHVkCut3aMDSqa/view" target="_blank" class="addCheck"> Lecture 7 - (Decoders) - Dr. Manal Tantawi </a>
-                </p>
-                <p>
-                    <i class="fas fa-file"></i>
-                    <a href="material/Dr/LD_L7.pdf" target="_blank" class="addCheck"> Lecture 7 - (Decoders) - Dr. Manal Tantawi </a>
-                </p>
-                <hr>
-                <p>
-                    <i class="fas fa-video"></i>
-                    <a href="https://web.microsoftstream.com/video/6e922c3d-4c6a-44be-af6e-fecfbd03f278" target="_blank" class="addCheck"> Lab 6 </a>
-                </p>
-                <hr>
-                <p>
-                    <i class="fas fa-file"></i>
-                    <a href="material/Dr/LD_T6.pdf" target="_blank" class="addCheck"> Tutorial 6 </a>
-                </p>
-                <p>
-                    <i class="fas fa-video"></i>
-                    <a href="https://web.microsoftstream.com/video/f9f67fb0-ab98-4b28-912a-20639bcab06e" target="_blank" class="addCheck"> Tutorial 6 Solutions </a>
-                </p>
-            </div>
+      <button class="accordion">Week 4</button>
+      <div class="panel">
+        <p>
+          <i class="fas fa-exclamation-triangle"></i>
+          <a
+            href="https://elearning.cis.asu.edu.eg/undergraduate/mod/assign/view.php?id=5139"
+            target="_blank"
+            class="addCheck"
+          >
+            Assignment C (Link on LMS)
+          </a>
+        </p>
+        <p>
+          <i class="fas fa-file"></i>
+          <a href="material/Dr/LD_AsC.pdf" target="_blank" class="addCheck">
+            Assignment C (PDF)
+          </a>
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-video"></i>
+          <a
+            href="https://web.microsoftstream.com/video/52fe048e-89f7-4c8e-852e-4429eb1a3cc1"
+            target="_blank"
+            class="addCheck"
+          >
+            Chapter 2 Recap - Dr. Mirvat Al-Qutt
+          </a>
+        </p>
+        <p>
+          <i class="fas fa-video"></i>
+          <a
+            href="https://web.microsoftstream.com/video/cc90d842-46f3-453f-afa4-17ce888399ef"
+            target="_blank"
+            class="addCheck"
+          >
+            Lecture 4 - (Gate Level Minimization, K-Maps) - Dr. Mirvat Al-Qutt
+          </a>
+        </p>
+        <p>
+          <i class="fas fa-file"></i>
+          <a href="material/Dr/LD_L4.pdf" target="_blank" class="addCheck">
+            Lecture 4 - (Gate Level Minimization, K-Maps) - Dr. Mirvat Al-Qutt
+          </a>
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-video"></i>
+          <a
+            href="https://web.microsoftstream.com/video/61abd6da-361b-4457-82d4-947a9396cc58"
+            target="_blank"
+            class="addCheck"
+          >
+            Lab 3
+          </a>
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-file"></i>
+          <a href="material/Dr/LD_T3.pdf" target="_blank" class="addCheck">
+            Tutorial 3
+          </a>
+        </p>
+        <p>
+          <i class="fas fa-video"></i>
+          <a
+            href="https://web.microsoftstream.com/video/2db22016-834a-4be1-895d-4dbc1ddf2580"
+            target="_blank"
+            class="addCheck"
+          >
+            Tutorial 3 Solutions
+          </a>
+        </p>
+        <hr />
+        <h4>Students' Materials</h4>
+        <p>
+          <i class="fas fa-file-alt"></i>
+          <a
+            href="https://drive.google.com/file/d/1-mXFeEyGDNN4119bo4eYjovBaJa9V-jG/view?fbclid=IwAR0nZXNNcxX8bIAHaC0GWulPQpgS6eLmAKFvsIjicTYyf1WxOiBi-A36Rqs"
+            target="_blank"
+            class="addCheck"
+          >
+            Tutorial 3 Solutions - Sarah ElGebaly</a
+          >
+        </p>
+      </div>
 
-            <button class="accordion">Week 8</button>
-            <div class="panel">
-                <p>
-                    Midterms Week
-                </p>
-            </div>
-            
-            <button class="accordion">Week 9</button>
-            <div class="panel">
-                <p>
-                    <i class="fas fa-video"></i>
-                    <a href="https://drive.google.com/file/d/1_xDg80iRaYEyPRLnZiKc-yJ-43OiHfs9/view" target="_blank" class="addCheck"> Lecture 8 - (Sequential Circuits) - Dr. Manal Tantawi </a>
-                </p>
-                <p>
-                    <i class="fas fa-file"></i>
-                    <a href="material/Dr/LD_L8.pdf" target="_blank" class="addCheck"> Lecture 8 - (Sequential Circuits) - Dr. Manal Tantawi </a>
-                </p>
-                <hr>
-                <p>
-                    <i class="fas fa-file"></i>
-                    <a href="material/Dr/LD_T7.pdf" target="_blank" class="addCheck"> Tutorial 7 </a>
-                </p>
-                <p>
-                    <i class="fas fa-video"></i>
-                    <a href="https://web.microsoftstream.com/video/6425c690-80c9-48d3-9f9e-81043925701d" target="_blank" class="addCheck"> Lab 7 + Tutorial 7 Solutions </a>
-                </p>
-            </div>
-            
-            <button class="accordion">Week 10</button>
-            <div class="panel">
-                <p>
-                    <i class="fas fa-video"></i>
-                    <a href="https://drive.google.com/file/d/1oa63XXpOC-X-ryKam9surHkFKBkxhVbv/view" target="_blank" class="addCheck"> Lecture 9 - (Sequential Circuits) - Dr. Manal Tantawi </a>
-                </p>
-                <p>
-                    <i class="fas fa-file"></i>
-                    <a href="material/Dr/LD_L9.pdf" target="_blank" class="addCheck"> Lecture 9 - (Sequential Circuits) - Dr. Manal Tantawi </a>
-                </p>
-                <hr>
-                <!-- <p>
+      <button class="accordion">Week 5</button>
+      <div class="panel">
+        <p>
+          <i class="fas fa-exclamation-triangle"></i>
+          <a
+            href="https://elearning.cis.asu.edu.eg/undergraduate/mod/assign/view.php?id=5705"
+            target="_blank"
+            class="addCheck"
+          >
+            Assignment D (Link on LMS)
+          </a>
+        </p>
+        <p>
+          <i class="fas fa-file"></i>
+          <a href="material/Dr/LD_AsD.pdf" target="_blank" class="addCheck">
+            Assignment D (PDF)
+          </a>
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-video"></i>
+          <a
+            href="https://web.microsoftstream.com/video/d2a0116e-9eed-48fe-b5be-a5bd385ebff8"
+            target="_blank"
+            class="addCheck"
+          >
+            Lecture 5 - (Combinational Logic) - Dr. Mirvat Al-Qutt
+          </a>
+        </p>
+        <p>
+          <i class="fas fa-file"></i>
+          <a href="material/Dr/LD_L5.pdf" target="_blank" class="addCheck">
+            Lecture 5 - (Combinational Logic) - Dr. Mirvat Al-Qutt
+          </a>
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-video"></i>
+          <a
+            href="https://web.microsoftstream.com/video/580b8cf6-e318-4a57-a6e9-11c9b7d94623"
+            target="_blank"
+            class="addCheck"
+          >
+            Lab 4
+          </a>
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-file"></i>
+          <a href="material/Dr/LD_T4.pdf" target="_blank" class="addCheck">
+            Tutorial 4
+          </a>
+        </p>
+        <p>
+          <i class="fas fa-video"></i>
+          <a
+            href="https://web.microsoftstream.com/video/ef58291e-b2f8-4f45-9047-cc37207fec32"
+            target="_blank"
+            class="addCheck"
+          >
+            Tutorial 4 Solutions
+          </a>
+        </p>
+      </div>
+
+      <button class="accordion">Week 6</button>
+      <div class="panel">
+        <p>
+          <i class="fas fa-video"></i>
+          <a
+            href="https://web.microsoftstream.com/video/8d0f90d0-c604-442d-9b28-4294cd680b38"
+            target="_blank"
+            class="addCheck"
+          >
+            Lecture 6 - (Combinational Logic) - Dr. Mirvat Al-Qutt
+          </a>
+        </p>
+        <p>
+          <i class="fas fa-file"></i>
+          <a href="material/Dr/LD_L6.pdf" target="_blank" class="addCheck">
+            Lecture 6 - (Combinational Logic) - Dr. Mirvat Al-Qutt
+          </a>
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-video"></i>
+          <a
+            href="https://web.microsoftstream.com/video/b1d4d000-3270-4b4c-8689-ef7f369c021c"
+            target="_blank"
+            class="addCheck"
+          >
+            Lab 5
+          </a>
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-file"></i>
+          <a href="material/Dr/LD_T5.pdf" target="_blank" class="addCheck">
+            Tutorial 5
+          </a>
+        </p>
+        <p>
+          <i class="fas fa-video"></i>
+          <a
+            href="https://web.microsoftstream.com/video/b2854f1f-b7ee-4112-a3f4-e93dffec961a"
+            target="_blank"
+            class="addCheck"
+          >
+            Tutorial 5 Solutions
+          </a>
+        </p>
+      </div>
+
+      <button class="accordion">Week 7</button>
+      <div class="panel">
+        <p>
+          <i class="fas fa-video"></i>
+          <a
+            href="https://drive.google.com/file/d/1_zQ1qkOxBHeMdQoZo_UHVkCut3aMDSqa/view"
+            target="_blank"
+            class="addCheck"
+          >
+            Lecture 7 - (Decoders) - Dr. Manal Tantawi
+          </a>
+        </p>
+        <p>
+          <i class="fas fa-file"></i>
+          <a href="material/Dr/LD_L7.pdf" target="_blank" class="addCheck">
+            Lecture 7 - (Decoders) - Dr. Manal Tantawi
+          </a>
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-video"></i>
+          <a
+            href="https://web.microsoftstream.com/video/6e922c3d-4c6a-44be-af6e-fecfbd03f278"
+            target="_blank"
+            class="addCheck"
+          >
+            Lab 6
+          </a>
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-file"></i>
+          <a href="material/Dr/LD_T6.pdf" target="_blank" class="addCheck">
+            Tutorial 6
+          </a>
+        </p>
+        <p>
+          <i class="fas fa-video"></i>
+          <a
+            href="https://web.microsoftstream.com/video/f9f67fb0-ab98-4b28-912a-20639bcab06e"
+            target="_blank"
+            class="addCheck"
+          >
+            Tutorial 6 Solutions
+          </a>
+        </p>
+      </div>
+
+      <button class="accordion">Week 8</button>
+      <div class="panel">
+        <p>Midterms Week</p>
+      </div>
+
+      <button class="accordion">Week 9</button>
+      <div class="panel">
+        <p>
+          <i class="fas fa-video"></i>
+          <a
+            href="https://drive.google.com/file/d/1_xDg80iRaYEyPRLnZiKc-yJ-43OiHfs9/view"
+            target="_blank"
+            class="addCheck"
+          >
+            Lecture 8 - (Sequential Circuits) - Dr. Manal Tantawi
+          </a>
+        </p>
+        <p>
+          <i class="fas fa-file"></i>
+          <a href="material/Dr/LD_L8.pdf" target="_blank" class="addCheck">
+            Lecture 8 - (Sequential Circuits) - Dr. Manal Tantawi
+          </a>
+        </p>
+        <hr />
+        <p>
+          <i class="fas fa-file"></i>
+          <a href="material/Dr/LD_T7.pdf" target="_blank" class="addCheck">
+            Tutorial 7
+          </a>
+        </p>
+        <p>
+          <i class="fas fa-video"></i>
+          <a
+            href="https://web.microsoftstream.com/video/6425c690-80c9-48d3-9f9e-81043925701d"
+            target="_blank"
+            class="addCheck"
+          >
+            Lab 7 + Tutorial 7 Solutions
+          </a>
+        </p>
+      </div>
+
+      <button class="accordion">Week 10</button>
+      <div class="panel">
+        <p>
+          <i class="fas fa-video"></i>
+          <a
+            href="https://drive.google.com/file/d/1oa63XXpOC-X-ryKam9surHkFKBkxhVbv/view"
+            target="_blank"
+            class="addCheck"
+          >
+            Lecture 9 - (Sequential Circuits) - Dr. Manal Tantawi
+          </a>
+        </p>
+        <p>
+          <i class="fas fa-file"></i>
+          <a href="material/Dr/LD_L9.pdf" target="_blank" class="addCheck">
+            Lecture 9 - (Sequential Circuits) - Dr. Manal Tantawi
+          </a>
+        </p>
+        <hr />
+        <!-- <p>
                     <i class="fas fa-file"></i>
                     <a href="material/Dr/LD_T6.pdf" target="_blank" class="addCheck"> Tutorial 7 </a>
                 </p> -->
-                <p>
-                    <i class="fas fa-video"></i>
-                    <a href="https://web.microsoftstream.com/video/970c9c40-d0ab-4557-8453-7cc9e4466720" target="_blank" class="addCheck"> Tutorial 8 </a>
-                </p>
-                <p>
-                    <i class="fas fa-video"></i>
-                    <a href="https://web.microsoftstream.com/video/6732bd07-c118-408b-9028-d2a4c383f58d" target="_blank" class="addCheck"> Lab 8 </a>
-                </p>
-            </div>
-            
-            <button class="accordion">Week 11</button>
-            <div class="panel">
-                <p>
-                    <i class="fas fa-video"></i>
-                    <a href="https://drive.google.com/file/d/1gP78kazAZWPu3-nNG4R5CTFzE98svdsi/view" target="_blank" class="addCheck"> Lecture 10 - (Analysis of Sequential Circuits) - Part 1 - Dr. Manal Tantawi </a>
-                </p>
-                <p>
-                    <i class="fas fa-file"></i>
-                    <a href="material/Dr/LD_L10a.pdf" target="_blank" class="addCheck"> Lecture 10 - (Analysis of Sequential Circuits) - Part 1 - Dr. Manal Tantawi </a>
-                </p>
-                <p>
-                    <i class="fas fa-video"></i>
-                    <a href="https://drive.google.com/file/d/1ZJMzdO6wE6RZqZvvCZBA4SX5N88xwcC4/view" target="_blank" class="addCheck"> Lecture 10 - (Analysis of Sequential Circuits) - Part 2 - Dr. Manal Tantawi </a>
-                </p>
-                <p>
-                    <i class="fas fa-file"></i>
-                    <a href="material/Dr/LD_L10b.pdf" target="_blank" class="addCheck"> Lecture 10 - (Analysis of Sequential Circuits) - Part 2 - Dr. Manal Tantawi </a>
-                </p>
-                <hr>
-                <!-- <p>
+        <p>
+          <i class="fas fa-video"></i>
+          <a
+            href="https://web.microsoftstream.com/video/970c9c40-d0ab-4557-8453-7cc9e4466720"
+            target="_blank"
+            class="addCheck"
+          >
+            Tutorial 8
+          </a>
+        </p>
+        <p>
+          <i class="fas fa-video"></i>
+          <a
+            href="https://web.microsoftstream.com/video/6732bd07-c118-408b-9028-d2a4c383f58d"
+            target="_blank"
+            class="addCheck"
+          >
+            Lab 8
+          </a>
+        </p>
+      </div>
+
+      <button class="accordion">Week 11</button>
+      <div class="panel">
+        <p>
+          <i class="fas fa-video"></i>
+          <a
+            href="https://drive.google.com/file/d/1gP78kazAZWPu3-nNG4R5CTFzE98svdsi/view"
+            target="_blank"
+            class="addCheck"
+          >
+            Lecture 10 - (Analysis of Sequential Circuits) - Part 1 - Dr. Manal
+            Tantawi
+          </a>
+        </p>
+        <p>
+          <i class="fas fa-file"></i>
+          <a href="material/Dr/LD_L10a.pdf" target="_blank" class="addCheck">
+            Lecture 10 - (Analysis of Sequential Circuits) - Part 1 - Dr. Manal
+            Tantawi
+          </a>
+        </p>
+        <p>
+          <i class="fas fa-video"></i>
+          <a
+            href="https://drive.google.com/file/d/1ZJMzdO6wE6RZqZvvCZBA4SX5N88xwcC4/view"
+            target="_blank"
+            class="addCheck"
+          >
+            Lecture 10 - (Analysis of Sequential Circuits) - Part 2 - Dr. Manal
+            Tantawi
+          </a>
+        </p>
+        <p>
+          <i class="fas fa-file"></i>
+          <a href="material/Dr/LD_L10b.pdf" target="_blank" class="addCheck">
+            Lecture 10 - (Analysis of Sequential Circuits) - Part 2 - Dr. Manal
+            Tantawi
+          </a>
+        </p>
+        <hr />
+        <!-- <p>
                     <i class="fas fa-file"></i>
                     <a href="material/Dr/LD_T6.pdf" target="_blank" class="addCheck"> Tutorial 7 </a>
                 </p> -->
-                <!-- <p>
+        <!-- <p>
                     <i class="fas fa-video"></i>
                     <a href="https://web.microsoftstream.com/video/970c9c40-d0ab-4557-8453-7cc9e4466720" target="_blank" class="addCheck"> Tutorial 8 </a>
                 </p> -->
-                <p>
-                    <i class="fas fa-video"></i>
-                    <a href="https://web.microsoftstream.com/video/32187f63-7329-447c-b001-5bc6d537ef6d" target="_blank" class="addCheck"> Lab 9 </a>
-                </p>
-            </div>
-
+        <p>
+          <i class="fas fa-video"></i>
+          <a
+            href="https://web.microsoftstream.com/video/32187f63-7329-447c-b001-5bc6d537ef6d"
+            target="_blank"
+            class="addCheck"
+          >
+            Lab 9
+          </a>
+        </p>
+      </div>
     </div>
 
     <!--Footer-->
     <footer>
       Developed and maintained by
-      <a href="https://omar45.com/" target="_blank"
-        >Omar AbdulRahman</a
-      >
+      <a href="https://omar45.com/" target="_blank">Omar AbdulRahman</a>
     </footer>
+
+    <!-- Buy me a coffee widget -->
+    <script
+      data-name="BMC-Widget"
+      data-cfasync="false"
+      src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+      data-id="omar45"
+      data-description="Support me on Buy me a coffee!"
+      data-message="Thanks for visiting, you can support me here"
+      data-color="#FFDD00"
+      data-position="Right"
+      data-x_margin="18"
+      data-y_margin="18"
+    ></script>
 
     <script src="scripts/accordion.js"></script>
     <script src="scripts/check.js"></script>
-
-</body>
-
+  </body>
 </html>
